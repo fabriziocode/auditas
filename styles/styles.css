@@ -423,7 +423,7 @@ header nav ul {
 }
 
 .slider .slide-track {
-    /* animation: scroll 40s linear infinite; */
+    animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 18);
 
@@ -448,6 +448,14 @@ header nav ul {
 
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
 
 /* ----- Fin carrusel experiencia : mobile ----- */
 
@@ -917,6 +925,15 @@ footer a{
     .menuList li:hover {
         color: var(--main-yColor);
 
+    }
+
+    .logoLinkedIn {
+        transition: all 1.3s;
+    }
+    
+    .logoLinkedIn:hover {
+        transform: scale(120%);
+    
     }
 
     /* ----- Fin header : intermedio ----- */
@@ -1421,6 +1438,13 @@ footer a{
 }
 
 /* ----- Fin info Servicios : mobile ----- */
+
+.grad-plans {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #dfab20, #ffbc00);
+    height: 200px;
+}
 
 /* ----- Inicio Contadores Servicios : mobile ----- */
 
