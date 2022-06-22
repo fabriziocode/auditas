@@ -1,0 +1,2285 @@
+/* ------------------------- Inicio de CSS Generales ------------------------- */
+
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* tipografia */
+*{
+    font-family: "Open Sans", sans-serif;
+    color: #1a1b2f;
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--main-titleColor);
+}
+
+span {
+    font-size: 16px;
+    color: var(--main-textColor);
+    line-height: 26px;
+}
+
+p {
+    font-size: var(--fontTextMobile);
+    color: var(--main-textColor);
+    line-height: 26px;
+}
+
+footer h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+:root {
+    --main-yColor: #f7b602;
+    --main-textColor: #425466;
+    --main-titleColor: #1a1b2f;
+    --silver-backgroundColor: #f6f9fc;
+    --blackBlue-backgroundColor: #1a1b2f;
+    --second-yColor: #d39b02;
+    --white-backgroundColor: #fff;
+        /* --mobile-- */
+        --fontTitleMobile: 40px;
+        --fontTextMobile: 16px;
+
+}
+
+body {
+    height: 100vh;
+}
+
+/* ------------------------------ Fin de CSS Generales ------------------------------ */
+
+/* --------------------------------------------------- Home --------------------------------------------------- */
+
+/* ------------------------------ Inicio de CSS Mobile ------------------------------ */
+
+/* ----- Inicio header_menu : mobile----- */
+
+.header__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 72px;
+    grid-column-gap: 10px;
+    background-color: var(--white-backgroundColor);
+    /* padding: 0px 30px; */
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.13);
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.13);
+    z-index: 99;
+}
+
+header nav ul a{
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+.logoAuditas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 30px;
+}
+
+#header__menuOption--logo {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.iconoMenuMobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 30px;
+
+}
+
+.checkboxMenuMobile {
+    display: none;
+}
+
+
+.menuHambu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconMenuMobileim {
+    height: 35px;
+    display: flex;
+    cursor: pointer;
+}
+
+.header__menuList {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: var(--blackBlue-backgroundColor);
+}
+
+.menuList {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    background-color: var(--blackBlue-backgroundColor);
+    text-align: center;
+    transition: all .5s;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 0vh;
+    z-index: 98;
+
+    /* display: none; */
+}
+
+
+
+.menuList li {
+    display: none;
+    /* flex-direction: column; */
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+    text-align: center;
+    /* height: 100%; */
+}
+
+.menuList li a:hover{
+    color: var(--main-yColor);
+    transition: .3s;
+}
+
+/* #menuHambu {
+    display: none;
+} */
+
+#menuHambu:checked ~ .menuList {
+    height: 100vh;
+
+}
+
+#menuHambu:checked ~ .menuList li {
+    display:block;
+}
+
+
+
+.menuList li a {
+    color: var(--white-backgroundColor);
+
+}
+
+.logoLinkedIn {
+    height: 25px;
+    padding-top: 10px;
+    transition-property: scale 2s;
+}
+
+
+/* ----- Fin header_menu : mobile ----- */
+
+/* ----- Inicio banner principal : mobile----- */
+
+
+.bannerpp {
+    display: grid;
+    /* top: 73px; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.3fr 1fr;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+    z-index: 97;
+    padding-bottom: 40px;
+}
+
+.backBannerPP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../assets/1_home/Banner-principal-mobile-auditas-consulting.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.bannerpp__fullTextA {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerpp__fullText{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.bannerpp__fullText--h1{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 43px;
+    padding: 0px 30px;
+    color: var(--main-titleColor);
+    line-height: 50px;
+}
+
+.bannerppSpanbtt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0px 30px;
+}
+
+.bannerpp__fullText--span{
+    color: var(--main-textColor);
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.button-pp{
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+    background-color: var(--main-yColor);
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.button-pp:hover{
+    background-color: var(--second-yColor);
+    color: #ffffff;
+}
+
+
+/* ----- Fin banner principal : mobile ----- */
+
+/* ----- Inicio contadores principal : mobile----- */
+
+#contadores{
+    background-color: var(--silver-backgroundColor);
+    width: auto;
+    margin-bottom: 30px;
+    /* margin: 30px 0px; */
+    padding: 60px 0px 20px 0px;
+    z-index: 99;
+
+}
+
+#contadores__items{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.contador__contenedor{
+    background-color: var(--white-backgroundColor);
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    font-size: var(--fontTitleMobile);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+}
+
+.contador__contenedor h3 {
+    color: var(--main-titleColor);
+}
+
+.contador__description{
+    font-size: var(--fontTextMobile);
+    margin: 15px;
+}
+
+.contador__description span{
+    color: var(--main-textColor)
+
+}
+
+
+
+#contador-1{
+    width: 200px;
+    text-align: center;
+    left: 23%;
+    margin-bottom: 25px;
+}
+
+#contador-2{
+    width: 200px;
+    text-align: center;
+    left: 43%;
+    margin-bottom: 25px;
+}
+
+#contador-3{
+    width: 200px;
+    text-align: center;
+    left: 63%;
+}
+
+/* ----- Fin contadores principal : mobile ----- */
+
+/* ----- Inicio banner secundario : mobile----- */
+
+.imgBannerSecB {
+    display: none;
+}
+
+#banner-secundario{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    /* background-image: url(../assets/1_home/banner-secundario-home-mobile.jpg); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 95;
+}
+
+.banner-secundario__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--main-textColor);
+    padding: 0px 30px;
+
+}
+
+.imgBannerSec {
+    display: flex;
+    width: 100%;
+}
+
+/* ----- Fin banner secundario : mobile ----- */
+
+/* ----- Inicio carrusel experiencia : mobile----- */
+
+.textSlider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: var(--main-yColor);
+    padding: 25px 10px 10px 10px;
+}
+
+.textSlider h2 {
+    color: var(--white-backgroundColor);
+}
+
+
+.slider {
+    display:grid;
+    grid-template-columns: 1fr;
+    background: var(--main-yColor);
+    height: 150px;
+    /* margin: auto; */
+    align-items: center;
+    /* width: 100%; */
+    overflow: hidden;
+    padding: 0px 0px 7px 0px;
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    z-index: 94;
+}
+
+
+.slider-track {
+    height: 20%;
+    /* width: 100vh; */
+}
+
+.slider .slide-track {
+    /* animation: scroll 40s linear infinite; */
+    display: flex;
+    width: calc(250px * 18);
+
+
+}
+
+.slider .slide {
+    height: 125px;
+    margin: 0px 30px;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+
+}
+
+.imgSlide {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/* ----- Fin carrusel experiencia : mobile ----- */
+
+/* ----- Inicio form : mobile----- */
+
+.formHome {
+    display: grid;
+    grid-template-rows: 0,5fr 1fr;
+    grid-row-gap: 20px;
+    background-color: var(--silver-backgroundColor);
+    padding: 30px 0px;
+}
+
+.formHome__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--main-textColor);
+    padding: 0px 30px;
+}
+
+.formHome__text p {
+    color: var(--main-textColor);
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-backgroundColor);
+    width: 1fr;
+    height: 1fr;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 11px 0px #8a8a8a73(0,0,0,0.45);
+    box-shadow: 0px 0px 11px 0px #8a8a8a73;
+    padding: 30px;
+    margin: 10px;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.borders-input{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    margin: 7px 0px 0px 0px;
+    border-radius: 30px;
+    border-color: #e0e0e073;
+    padding: 0px 20px;
+}
+
+.select-input{
+    margin: 7px 0px 10px 0px;
+    height: 40px;
+    font-size: 14px;
+    padding: 5px 20px 5px 20px;
+}
+
+.button-ppb{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #f7b602;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.button-ppb:hover{
+    font-weight: 600;
+    background-color: #d39b02;
+    color: #ffffff;
+}
+
+/* ----- Fin form : mobile ----- */
+
+/* ----- Inicio pilares : mobile----- */
+
+.pilares{
+    z-index: 93;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    padding: 40px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pilar-1{
+    /* position: absolute;
+    top: 45px;
+    left: 7%; */
+    /* width: 400px; */
+    font-size: 16px; 
+}
+
+.pilar-1 img{
+    width: 180px;
+}
+
+.pilar-2{
+    /* position: absolute;
+    top: 45px;
+    left: 40%; */
+    /* width: 400px; */
+    font-size: 16px; 
+}
+
+.pilar-2 img{
+    width: 180px;
+}
+
+.pilar-3{
+    /* position: absolute;
+    top: 45px;
+    left: 70%; */
+    /* width: 400px; */
+    font-size: 16px; 
+}
+
+.pilar-3 img{
+    width: 180px;
+}
+
+.pilares p{
+    color: #425466;
+}
+
+
+
+/* ----- Fin pilares : mobile ----- */
+
+/* ----- Inicio Footer : mobile----- */
+
+.footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--silver-backgroundColor);
+    padding: 40px 30px;
+}
+
+.footer-items{
+    padding: 60px;
+    text-align: center;
+}
+
+.logoFooterAud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    text-align: center; */
+    height: 50px;
+    
+}
+
+.footer-items--col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-items--col2 h3{
+    display: inline;
+    line-height: 25px;
+    
+}
+
+.footer-items--col2 {
+    /* padding: 20px; */
+    line-height: 25px;
+}
+
+.footer-items--col2-a,
+.footer-items--col2-b,
+.footer-items--col2-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer a{
+    font-size: 14px;
+}
+
+/* ------------------------------ Fin de CSS Mobile ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Tablet Peq ------------------------------ */
+
+@media screen and (min-width: 600px) {
+    
+    /* ----- Inicio banner principal : tablet peq ----- */
+
+    .bannerpp {
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .backBannerPP {
+        background-image: url(../assets/1_home/Banner-Principal-tablet-1.jpg);
+        background-position-y: -80px;
+    }
+
+
+    /* ----- Fin banner principal : tablet peq ----- */
+
+    /* ----- Inicio contadores principal : tablet peq ----- */
+
+
+            /* No se agregan o cambian reglas CSS a esta sección para esta esta resolución */
+
+
+    /* ----- Fin contadores principal : tablet peq ----- */
+
+    /* ----- Inicio banner secundario : tablet peq ----- */
+
+    #banner-secundario{
+        display: grid;
+        grid-template-rows: 0.4fr 2fr;
+        /* background-image: url(../assets/1_home/banner-secundario-home-mobile.jpg); */
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        z-index: 95;
+    }
+    
+    .banner-secundario__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content:center;
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 1.8;
+        color: var(--main-textColor);
+        padding: 0px 70px;
+    }
+    
+    .imgBannerSec {
+        display: flex;
+        width: 100%;
+    }
+
+    /* ----- Fin banner secundario : tablet peq ----- */
+
+    /* ----- Inicio carrusel experiencia : tablet peq ----- */
+
+
+            /* No se agregan o cambian reglas CSS a esta sección para esta esta resolución */
+
+
+    /* ----- Fin carrusel experiencia : tablet peq ----- */
+
+    /* ----- Inicio form : tablet peq ----- */
+
+    .formHome__text {
+        padding: 0px 70px;
+    }
+    
+    .form-container {
+        margin: 10px 70px;
+    }
+
+
+    /* ----- Fin form : tablet peq ----- */
+
+    /* ----- Inicio pilares : tablet peq ----- */
+
+    .pilares{
+        padding: 40px 70px;
+    }
+
+    /* ----- Fin pilares : tablet peq ----- */
+
+    /* ----- Inicio footer : tablet peq ----- */
+
+    .footer-items--col1 {
+        margin-bottom: 0px;
+    }
+    
+    .footer-items--col2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+}
+
+/* ------------------------------ Fin de CSS Tablet Peq ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Tablet Gra ------------------------------ */
+
+@media screen and (min-width: 800px) {
+
+    /* ----- Inicio banner principal : tablet gra ----- */
+
+    .bannerpp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+        height: 350px;
+        padding-bottom: 0px;
+    }
+    
+
+    .backBannerPP {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        background-image: url(../assets/1_home/Banner-Principal.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-position-x: -200px; */
+        width: 100%;
+        order: 2;
+        /* Profe se que en clase hablamos de que esto no es muy recomendable (order) hacerlo, pero la razón es que en mobile el orden lo necesitaba primero la imagen y despues el texto, en este caso lo necesito primero el texto y despues la imagen, entonces por eso utilice order */
+        z-index: -1;
+    }
+
+    .bannerpp__fullTextA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+
+    /* ----- Fin banner principal : tablet gra ----- */
+
+    /* ----- Inicio contadores principal : tablet gra ----- */
+
+    #contadores {
+        z-index: 10;
+    }
+
+    #contadores__items {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+
+    /* ----- Fin contadores principal : tablet gra ----- */
+
+    /* ----- Inicio banner secundario : tablet gra ----- */
+
+    #banner-secundario{
+        display: grid;
+        grid-template-rows: 0.4fr 6fr;
+        background-size: cover;
+        width: 100%;
+        z-index: 93;
+    }
+    
+    .banner-secundario__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content:center;
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 1.8;
+        color: var(--main-textColor);
+        padding: 0px 70px;
+    }
+    
+    .imgBannerSec {
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+
+/* ------------------------------ Fin de CSS Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Intermedio entre Tablet Gra & Desketop ------------------------------ */
+
+
+/* ----- Inicio header : intermedio----- */
+
+@media screen and (min-width: 957px) {
+
+    .menuList li {
+        display: flex;
+    }
+
+    .menuList li a {
+        color: var(--main-titleColor);
+    
+    }
+
+
+
+    .iconoMenuMobile {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iconMenuMobileim {
+        display: none;
+    }
+
+    .checkboxMenuMobile {
+        display: none;
+    }
+
+    .menuList {
+        display: flex;
+        flex-direction: row;
+        flex-flow: 2;
+        position: unset;
+        transition: unset;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    .menuList li {
+        padding: 0px 20px;
+        display: flex;
+        transition: unset;
+        margin: 0;
+        align-items: center;
+
+    } 
+
+    #menuHambu:checked ~ .menuList {
+        height: 0vh;
+    
+    }
+    
+    #menuHambu:checked ~ .menuList li {
+        display:flex;
+    }
+
+
+    .logoLinkedIn:hover {
+        transform: scale(120%);
+    
+    }
+
+    .menuList li:hover {
+        color: var(--main-yColor);
+
+    }
+
+    /* ----- Fin header : intermedio ----- */
+
+    /* ----- Inicio banner principal : intermedio ----- */
+
+
+            /* No se agregan o cambian reglas CSS a esta sección para esta esta resolución */
+
+
+    /* ----- Fin banner principal : intermedio ----- */
+
+    /* ----- Inicio contadores : intermedio----- */
+
+    #contadores {
+        margin-bottom: 0px;
+    }
+
+    /* ----- Fin contadores : intermedio----- */
+
+    /* ----- Inicio banner secundario : intermedio----- */
+
+    .imgBannerSec {
+        display: none;
+    }
+
+    #banner-secundario {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 500px;
+    }
+    
+    .imgBannerSecB {
+        display: flex;
+        background-image: url("../assets/1_home/prueba-1.png");
+        background-size: cover;
+        justify-content: left;
+        order: 1;
+
+    }
+
+
+
+    .banner-secundario__text {
+        order: 2;
+    }
+
+    /* ----- Fin banner secundario : intermedio -----*/
+
+    /* ----- Inicio experiencia : intermedio ----- */
+
+
+            /* No se agregan o cambian reglas CSS a esta sección para esta esta resolución */
+
+
+    /* ----- Fin experiencia : intermedio ----- */
+
+
+    /* ----- Inicio form : intermedio ----- */
+
+    .formHome__text {
+        padding: 0px 200px;
+    }
+    
+    .form-container {
+        margin: 10px 200px;
+    }
+
+    /* ----- Fin form : intermedio ----- */
+
+
+    /* ----- Inicio pilares : intermedio ----- */
+
+    .pilares {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        padding: 40px 30px 40px 65px;
+        margin: 50px 0px;
+    }
+
+    .pilar-1, .pilar-2, .pilar-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* ----- Fin pilares : intermedio -----*/
+
+    /* ----- Inicio footer : intermedio ----- */
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logoFooterAud {
+        align-items: flex-start;
+    }
+
+    .footer-items--col1 {
+        display: block;
+    }
+
+    .footer-items--col2 {
+        order: 2;
+    }
+
+
+    /* ----- Fin footer : intermedio ----- */
+    
+}
+
+
+/* ------------------------------ Fin de CSS Intermedio entre Tablet Gra & Desketop ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Desktop ------------------------------ */
+
+@media screen and (min-width: 1200px) {
+
+    .menuList {
+        justify-content: flex-end;
+    }
+
+
+    /* ----- Inicio banner principal : desktop ----- */
+
+    .bannerpp{
+        height: 610px;
+        grid-template-columns: 1fr 1.2fr
+        
+    }
+    
+    .backBannerPP {
+        background-position: -545px
+    }
+
+    .bannerpp__fullText--h1{
+    font-size: 55px;
+    }
+
+    .bannerpp__fullText--span {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    /* ----- Fin banner principal : desktop -----*/
+
+    /* ----- Inicio contador : desktop ----- */
+
+    #contadores{
+        display: grid;
+        grid-template-columns: 0.6fr;
+        justify-content: center;
+
+    }
+
+
+    .contador-1, .contador-2, .contador-3 {
+        
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    /* ----- Fin contador : desktop -----*/
+
+    /* ----- Inicio banner secundario : desktop ----- */
+
+   
+
+
+    /* ----- Fin banner secundario : desktop -----*/
+
+
+    /* ----- Inicio experiencia : desktop ----- */
+
+
+            /* No se agregan o cambian reglas CSS a esta sección para esta esta resolución */
+
+
+    /* ----- Fin banner experiencia : desktop ----- */
+
+
+    /* ----- Inicio form : desktop ----- */
+
+    .formHome {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 80px 60px;
+        
+    }
+
+    .formHome__text {
+        padding: 0px 10px 0px 40px;
+    }
+    
+    .form-container {
+        margin: 10px 40px;
+        padding: 40px;
+    }
+
+    /* ----- Fin banner form : desktop ----- */
+    
+
+}
+
+
+
+/* ------------------------------ Fin de CSS Desketop ------------------------------ */
+
+/* ------------------------------ Inicio de CSS > Desktop ------------------------------ */
+
+@media screen and (min-width: 1400px) {
+
+    /* ----- Inicio banner principal : > desktop ----- */
+
+    .bannerpp{
+        height: 580px;
+        grid-template-columns: 1fr 1.5fr
+        
+    }
+    
+    .backBannerPP {
+        background-position: right;
+        background-size: auto 100%;
+
+    }
+
+    /* ----- Fin banner principal : > desktop -----*/
+
+
+    /* ----- Inicio banner secundario : > desktop ----- */
+
+    /* #banner-secundario {
+        height: 500px;
+        background-repeat: no-repeat;
+    } */
+
+    /* .imgBannerSec {
+
+        background-position-x: 0px;
+    } */
+
+
+    /* ----- Fin banner secundario : desktop -----*/
+
+}
+
+
+/* ------------------------------ Fin de CSS > Desktop ------------------------------ */
+
+
+
+/* --------------------------------------------------- Nosotros --------------------------------------------------- */
+
+/* ------------------------------ Inicio de CSS Nosotros Mobile ------------------------------ */
+
+/* ----- Inicio banner secundario Nosotros : mobile ----- */
+
+.imgBannersSec__Noso {
+    background-image: url(../assets/2_nosotros/Banner-Secundario-Mobile-Nos.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ----- Fin banner secundario Nosotros : mobile ----- */
+
+/* ----- Inicio info Nosotros : mobile ----- */
+
+.infoNosotros__images img {
+    width: 300px;
+}
+
+.generalInfoNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+}
+
+.generalInfoNosotros__fullText {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    margin: 30px 0px;
+    text-align: left;
+}
+
+.generalInfoNosotros__fullText h2 {
+    color: var(--main-titleColor);
+}
+
+.generalInfoNosotros__fullText p {
+    color: var(--main-textColor);
+    line-height: 26px;
+}
+
+.Nosotros__certiLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.Nosotros__certiLogo img {
+    width: 100px;
+    padding-right: 10px;
+}
+
+.infoNosotros__images {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* ----- Fin info Nosotros : mobile ----- */
+
+/* ----- Inicio Pilares Nosotros : mobile ----- */
+
+.pilaresNoso {
+    background-color: var(--silver-backgroundColor);
+}
+
+
+/* ----- Fin Pilares Nosotros : mobile ----- */
+
+/* ------------------------------ Inicio de CSS Nosotros Tablet Peq ------------------------------ */
+
+/* ----- Inicio info Nosotros : tablet peq ----- */
+
+@media screen and (min-width: 600px) {
+    
+
+    .generalInfoNosotros__fullText {
+        padding: 0px 70px;
+    }
+
+    .Nosotros__certiLogo img {
+        width: 120px;
+        padding-right: 10px;
+    }
+
+}
+
+
+/* ----- Fin Pilares Nosotros : tablet peq ----- */
+
+/* ------------------------------ Inicio de CSS Nosotros Tablet Gra ------------------------------ */
+
+
+@media screen and (min-width: 800px) {
+
+    /* ----- Inicio banner secundario Nosotros : tablet gra ----- */
+
+    .imgBannersSec__Noso {
+        background-image: url(../assets/2_nosotros/banner-secundario.jpg);
+        background-size: cover;
+        background-position: -150px;
+        z-index: -1;
+    }
+
+    /* ----- Fin banner secundario Nosotros : tablet gra ----- */
+
+    
+
+    .generalInfoNosotros {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .generalInfoNosotros__fullText {
+        display: flex;
+        padding: 0px 30px;
+        width: 1fr;
+    }
+
+    .infoNosotros__images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    /* ----- Fin info Nosotros : tablet gra ----- */
+
+}
+
+/* ------------------------------ Fin de CSS Nosotros Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Intermedio Nosotros entre Tablet Gra & Desketop ------------------------------ */
+
+@media screen and (min-width: 957px) {
+
+    /* ----- Inicio banner secundario Nosotros : intermedio ----- */
+
+    .imgBannersSec__Noso {
+        background-position: -70px;
+    }
+
+    /* ----- Fin banner secundario Nosotros : intermedio ----- */
+
+    /* ----- Inicio info Nosotros : intermedio ----- */
+
+    .generalInfoNosotros{
+        margin: 0px 0px 30px 0px;
+    }
+
+    .generalInfoNosotros__fullText{
+        padding: 0px 0px 0px 60px;
+    }
+
+    /* ----- Fin info Nosotros : intermedio ----- */
+
+    /* ----- Inicio Pilares Nosotros : intermedio ----- */
+
+    .pilaresNoso {
+        margin: 0px;
+    }
+
+    /* ----- fin Pilares Nosotros : intermedio ----- */
+
+}
+
+/* ------------------------------ Fin de CSS Intermedio Nosotros entre Tablet Gra & Desketop ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Desktop Nosotros ------------------------------ */
+
+
+@media screen and (min-width: 1200px) {
+
+    /* ----- Inicio banner secundario Nosotros : desktop ----- */
+
+    .imgBannersSec__Noso {
+        background-position: -120px;
+    }
+    
+}
+
+/* ------------------------------ Fin de CSS Desktop Nosotros ------------------------------ */
+
+/* ------------------------------ Inicio de CSS >Desktop Nosotros ------------------------------ */
+
+@media screen and (min-width: 1400px) {
+    
+    /* ----- Inicio banner secundario Nosotros : < desktop ----- */
+
+    .imgBannersSec__Noso {
+        background-position: left;
+    }
+
+}
+
+/* ------------------------------ Fin de CSS >Desktop Nosotros ------------------------------ */
+
+
+
+
+
+/* --------------------------------------------------- Servicios --------------------------------------------------- */
+
+/* ------------------------------ Inicio de CSS Servicio Mobile ------------------------------ */
+
+/* ----- Inicio banner secundario Servicios : mobile ----- */
+
+.imgBannersSec__Serv {
+    background-image: url(../assets/3_servicios/Banner-Secundario-Mobile--serv.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ----- Fin banner secundario Servicios : mobile ----- */
+
+/* ----- Inicio info Servicios : mobile ----- */
+
+.info__servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0px 30px;
+    margin: 40px 0px;
+}
+
+.info__servicios h2, .info__servicios h3 {
+    color: var(--main-titleColor);
+}
+
+.info__servicios p {
+    color: var(--main-textColor);
+    line-height: 26px;
+}
+
+/* ----- Fin info Servicios : mobile ----- */
+
+/* ----- Inicio Contadores Servicios : mobile ----- */
+
+#contadoresSer {
+    background-color: var(--white-backgroundColor);
+}
+
+/* ----- Fin Contadores Servicios : mobile ----- */
+
+/* ----- Inicio Planes Servicios : mobile ----- */
+
+#planes-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grad-plans {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-backgroundColor);
+    height: 200px;
+}
+
+.serv-1 {
+    grid-area: s1;
+}
+
+.serv-2 {
+    grid-area: s2;
+}
+
+.serv-3 {
+    grid-area: s3;
+    width: 0.7fr;
+    height: 250px;
+}
+
+.serv-4 {
+    grid-area: s4;
+}
+
+.serv-5 {
+    grid-area: s5;
+}
+
+.serv-contenedor {
+    display: grid;
+    grid-template-areas:
+    "s3 s3"
+    "s1 s2"
+    "s4 s5";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.4fr 1fr 1fr;
+    justify-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.serv-contenedor{
+    width: 100%;
+    text-align: center;
+}
+
+.servPlans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-backgroundColor);
+    width: 0.4fr;
+    height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+}
+
+.servContenedorPri {
+    width: 250px;
+    height: 275px;
+}
+
+.servContenedorSec {
+    width: 150px;
+    height: 200px;
+}
+
+.button-ppd{
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+    font-size: 12px;
+    border: 1px solid #f7b602;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.button-ppd:hover{
+    background-color: #f7b602;
+    color: #ffffff;
+}
+
+/* ----- Fin Planes Servicios : mobile ----- */
+
+/* ----- Inicio banner talleres : mobile ----- */
+
+.bannerTalleres {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bannerTalleresTexts{
+    padding: 0px 30px;
+}
+
+.button-ppc{
+    padding: 10px 25px 10px 25px;
+    font-size: 14px;
+    background-color: var(--main-yColor);
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button-ppc:hover{
+    background-color: var(--second-yColor);
+    color: #ffffff;
+}
+
+.bannerTalleresImg {
+    background-image: url(../assets/3_servicios/Banner-talleres-Mobile.jpg);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+}
+
+/* ----- Fin banner talleres : mobile ----- */
+
+/* ------------------------------ Fin de CSS Mobile Servicios ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Servicios Tablet Peq ------------------------------ */
+
+@media screen and (min-width: 600px) {
+
+    /* ----- Inicio Info Servicios : Tablet Peq ----- */
+    
+    .info__servicios{
+        padding: 0px 70px;
+    }
+
+    /* ----- Fin Info Servicios : Tablet Peq ----- */
+    
+    /* ----- Inicio Planes Servicios : Tablet Peq ----- */
+
+    .servContenedorPri {
+        width: 350px;
+    }
+
+    .servContenedorSec {
+        width: 250px;
+    }
+
+    /* ----- Fin Planes Servicios : Tablet Peq ----- */
+
+    /* ----- Inicio Banner Talleres Servicios : Tablet Peq ----- */
+
+    .bannerTalleres {
+        grid-template-rows: 1fr 1.5fr;
+    }
+    
+    .bannerTalleresTexts {
+        padding: 0px 70px 20px 70px;
+    }
+
+    /* ----- Fin Banner Talleres Servicios : Tablet Peq ----- */
+
+}
+
+
+/* ------------------------------ Fin de CSS Servicios Tablet Peq ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Servicios Tablet Gra ------------------------------ */
+
+@media screen and (min-width: 800px) {
+
+
+    /* ----- Inicio Banner Talleres Servicios : Tablet Gra ----- */
+
+    .imgBannersSec__Serv {
+        background-image: url(../assets/3_servicios/banner-secundario-servicios.jpg);
+        z-index: -1;
+        background-position: -40px;
+    }
+
+    /* ----- Fin Banner Talleres Servicios : Tablet Gra ----- */
+
+    /* ----- Inicio Planes Servicios : Tablet Gra ----- */
+
+    .servContenedorPri {
+        width: 400px;
+    }
+
+    .servContenedorSec {
+        width: 325px;
+    }
+
+    /* ----- Fin Planes Servicios : Tablet Gra ----- */
+
+    /* ----- Inicio Banner talleres Servicios : Tablet Gra ----- */
+
+    .bannerTalleres {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+     /* ----- Fin Banner talleres Servicios : Tablet Gra ----- */
+    
+}
+
+/* ------------------------------ Fin de CSS Servicios Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Servicios Intermedio ------------------------------ */
+
+@media screen and (min-width: 957px) {
+
+    /* ----- Inicio Banner talleres Servicios : Intermedio ----- */
+
+    .bannerTalleresImg {
+        background-image: url(../assets/3_servicios/banner-secundario-servicios-2.jpg);
+        background-size: cover;
+        background-position: 602px;
+        display: flex;
+    }
+
+    .bannerTalleres {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .bannerTalleresTexts {
+        padding: 30px 10px 30px 70px;
+
+    }
+
+    /* ----- Fin Banner talleres Servicios : Intermedio ----- */
+    
+}
+
+/* ------------------------------ Fin de CSS Servicios Intermedio ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Servicios Desktop ------------------------------ */
+
+@media screen and (min-width: 1200px) {
+
+    /* ----- Inicio infos Servicios : Desktop ----- */
+
+    .imgBannersSec__Serv {
+        background-position: left;
+    }
+
+    .info__servicios {
+        padding: 0px 200px;
+    }
+
+    #contadoresSer {
+        display: grid;
+        grid-template-columns: 0.6fr;
+        justify-content: center;
+    }
+
+
+    .serv-contenedor {
+        grid-template-areas: 
+        "s1 s2 s3 s4 s5";
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        align-items: flex-end;
+        padding: 0px auto;
+
+    }
+
+    .servContenedorPri {
+        width: 230px;
+        height: 300px;
+    }
+
+    .servContenedorSec {
+        width: 150px;
+    }
+
+    .bannerTalleresTexts {
+        padding: 30px 10px 30px 100px;
+    }
+
+    .bannerTalleresImg {
+        background-position: right
+    }
+
+}
+
+/* ------------------------------ Fin de CSS Servicios Desktop ------------------------------ */
+
+
+/* --------------------------------------------------- Carrera --------------------------------------------------- */
+
+
+/* ------------------------------ Inicio de CSS Carrera Mobile ------------------------------ */
+
+/* ----- Inicio banner secundario Carrera : mobile ----- */
+
+.imgBannersSec__Career {
+    background-image: url(../assets/4_carrera/Banner-Secundario-Mobile-Carrera.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info__carrera {
+    padding: 30px;
+}
+
+
+.pre-vacantesInfo {
+    padding: 30px;
+}
+
+.vacantesSection {
+    background-color: var(--silver-backgroundColor);
+}
+
+.vacantesContenedores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.vacantesContenedor__interno {
+    background-color: var(--white-backgroundColor);
+    display: flex;
+    width: 220px;
+    height: 150px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 7px;
+    padding: 0px 40px;
+    
+}
+
+/* ------------------------------ Fin de CSS Carrera Mobile ------------------------------ */
+
+
+
+/* ------------------------------ Inicio de CSS Carrera Tablet Peq ------------------------------ */
+
+/* No fue necesario realizar reglas nuevas para esta brakpoint */
+
+/* ------------------------------ Fin de CSS Carrera Tablet Peq ------------------------------ */
+
+
+
+/* ------------------------------ Inicio de CSS Carrera Tablet Gra ------------------------------ */
+
+@media screen and (min-width: 800px) {
+
+    .imgBannersSec__Career {
+        background-image: url(../assets/4_carrera/banner-secundario-carrera.jpg);
+        z-index: -1;
+        background-position: -115px;
+    }
+
+    .info__carrera {
+        padding: 30px 70px;
+    }
+
+    .pre-vacantesInfo {
+        padding: 30px 70px;
+    }
+
+    .vacantesContenedores {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
+
+/* ------------------------------ Fin de CSS Carrera Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Carrera Intermedio ------------------------------ */
+
+@media screen and (min-width: 950px) {
+    .imgBannersSec__Career {
+        background-position: left;
+    }
+
+    .vacantesContenedor__interno {
+        width: 300px;
+    }
+    
+}
+
+/* ------------------------------ Fin de CSS Carrera Intermedio ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Carrera Desktop ------------------------------ */
+
+@media screen and (min-width: 1200px) {
+
+    .imgBannersSec__Career {
+        background-position: unset;
+    }
+
+    .info__carrera {
+        padding: 30px 200px;
+    }
+
+    .pre-vacantesInfo {
+        padding: 30px 200px;
+    }
+
+    .vacantesContenedores {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        padding: 0px 100px;
+        grid-column-gap: 15;
+    }
+
+    .vacantesContenedor__interno {
+        width: 250px;
+    }
+
+    
+
+}
+
+
+
+
+
+
+/* --------------------------------------------------- Contacto --------------------------------------------------- */
+
+
+/* ------------------------------ Inicio de CSS Contacto Mobile ------------------------------ */
+
+.bannerSecPages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+    padding-bottom: 40px;
+}
+
+.imgBannersSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../assets/5_contacto/Banner-Secundario-Mobile-cont.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.textSecBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+
+}
+
+.bannersec__fullText {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.bannersec__fullText--span {
+    line-height: 30px;
+    font-size: 20px;
+    color: var(--main-textColor);
+}
+
+.bannersec__fullText--h1 {
+    font-size: 43px;
+    color: var(--main-titleColor);
+}
+
+
+
+/* ----- Fin banner secundario contacto : mobile ----- */
+
+/* ----- Inicio info contacto : mobile----- */
+
+.infoContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0px 30px;
+    margin: 30px 0px;
+}
+
+.infoContacto h2 {
+    color: var(--main-titleColor);
+    margin: 0px 0px 10px 0px;
+}
+
+.infoContacto p {
+    font-size: var(--fontTextMobile);
+    color: var(--main-textColor);
+    line-height: 26px;
+}
+
+/* ----- Fin info contacto : mobile ----- */
+
+/* ----- Inicio form contacto : mobile----- */
+
+.form-contacto {
+    display: grid;
+    grid-template-rows: 0,5fr 1fr;
+    grid-row-gap: 20px;
+    background-color: var(--silver-backgroundColor);
+    padding: 30px 0px;
+}
+
+.form-containerContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--main-textColor);
+    padding: 0px 30px;
+}
+
+.form-containerContacto{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-backgroundColor);
+    width: 1fr;
+    height: 1fr;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 11px 0px #8a8a8a73(0,0,0,0.45);
+    box-shadow: 0px 0px 11px 0px #8a8a8a73;
+    padding: 30px;
+    margin: 10px;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.borders-input{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    margin: 7px 0px 0px 0px;
+    border-radius: 30px;
+    border-color: #e0e0e073;
+    padding: 0px 20px;
+}
+
+.select-input{
+    margin: 7px 0px 10px 0px;
+    height: 40px;
+    font-size: 14px;
+    padding: 5px 20px 5px 20px;
+}
+
+.button-ppb{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #f7b602;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.button-ppb:hover{
+    font-weight: 600;
+    background-color: #d39b02;
+    color: #ffffff;
+}
+
+/* ----- Fin form contacto : mobile ----- */
+
+
+/* ----- Inicio Hr Intermedio contacto : mobile----- */
+
+.footerWithHr{
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    background-color: var(--silver-backgroundColor);
+    padding: 40px 30px;
+    align-items: center;
+}
+
+.divHrInter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.hrInter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: var(--main-textColor);
+    border: 0.5px solid;
+    width: 40vh;
+}
+
+/* ----- Fin footer contacto : mobile ----- */
+
+/* ------------------------------ Fin de CSS Contacto Mobile ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Contacto Tablet Peq ------------------------------ */
+
+@media screen and (min-width: 479px) {
+
+    .bannerSecPages {
+        grid-template-rows: 2.5fr 1fr;
+    }
+    
+}
+
+
+@media screen and (min-width: 600px) {
+
+    /* ----- Inicio banner secundario Contacto: Tablet Peq ----- */
+    
+    .bannerSecPages {
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+    }
+
+    /* ----- Fin banner secundario Contacto: Tablet Peq ----- */
+
+    /* ----- Inicio info Contacto: Tablet Peq ----- */
+
+    .infoContacto {
+        padding: 0px 70px;
+    }
+
+
+    /* ----- Fin info Contacto: Tablet Peq ----- */
+
+    /* ----- Inicio Form Contacto: Tablet Peq ----- */
+
+    .form-containerContacto {
+        padding: 30px; 
+    }
+
+    .form-containerContacto {
+        margin: 10px 70px;
+
+    }
+
+
+    
+
+
+     .footer-items--col1 {
+        margin-bottom: 0px;
+    }
+    
+    .footer-items--col2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+}
+
+@media screen and (min-width: 676px) {
+
+
+     /* ----- Inicio banner secundario Contacto : tablet Gra ----- */
+    
+     .bannerSecPages {
+        grid-template-rows: 4.5fr 1fr;
+    }
+
+    .imgBannerSec {
+        background-image: url(../assets/5_contacto/Banner-Secundario-Tablet.jpg); 
+    }
+    
+}
+
+/* ------------------------------ Fin de CSS Contacto Tablet Peq ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Contacto Tablet Gra ------------------------------ */
+
+
+
+@media screen and (min-width: 800px) {
+
+    .bannerSecPages {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 300px;
+        justify-content: left;
+        padding-bottom: 0px;
+        
+    }
+
+    .imgBannersSec {
+        background-image: url(../assets/5_contacto/banner-secundario-contacto-desk.jpg);
+        background-size: cover;
+        background-position: left;
+        z-index: -1;
+
+    }
+
+    
+
+
+    
+}
+
+
+/* ------------------------------ Fin de CSS Contacto Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Intermedio  Contacto entre Tablet Gra & Desketop ------------------------------ */
+
+@media screen and (min-width: 957px) {
+
+
+    /* ----- Inicio form contacto : intermedio ----- */
+
+    .form-containerContacto {
+        padding: 30px; 
+    }
+    
+    .form-containerContacto {
+        margin: 10px 200px;
+    
+    }
+
+    /* ----- Fin form contacto : intermedio -----*/
+
+    /* ----- Inicio footer contacto : intermedio ----- */
+
+    .footerWithHr .divHrInter {
+        grid-area: hr;
+    }
+
+    .footerWithHr .logoFooterAud {
+        grid-area: logoFoo;
+    }
+
+    .footerWithHr .footer-items--col1  {
+        grid-area: fooCol1;
+
+    }
+
+    .footerWithHr .footer-items--col2 {
+        grid-area: fooCol2;
+        justify-content: flex-start;
+    }
+
+    .footerWithHr .footer-items--col2 a{
+        margin: 50px 20px 50px 0px;
+    }
+    
+
+    .footerWithHr {
+        grid-template-areas: 
+        "hr hr"
+        "logoFoo fooCol1"
+        "fooCol2 fooCol2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr;
+    }
+    
+}
+
+/* ------------------------------ Fin de CSS Intermedio Contacto entre Tablet Gra & Desketop ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Desktop Contacto ------------------------------ */
+
+@media screen and (min-width: 1200px) {
+
+/* ----- Inicio banner secundario contacto : desktop ----- */
+
+    .bannerSecPages {
+        height: 400px;
+    }
+
+    .bannersec__fullText--h1 {
+        font-size: 55px;
+    }
+
+    .bannersec__fullText--span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .textSecBanner {
+        padding-right: 40px;
+    }
+
+    /* ----- Fin banner secundario contacto : desktop -----*/
+
+    /* ----- Inicio info contacto : desktop ----- */
+
+    .infoContacto{
+        padding: 0px 200px;
+    }
+
+    /* ----- Fin info contacto : desktop -----*/
+
+    /* ----- Inicio form contacto : desktop ----- */
+
+    .form-containerContacto {
+        padding: 40px; 
+    }
+    
+    .form-containerContacto {
+        margin: 10px 300px;
+    
+    }
+
+}
+
+/* ------------------------------ Fin de CSS Desktop Contacto ------------------------------ */
+
+
+
+
+
+
+
+
+
