@@ -1,0 +1,137 @@
+/* ----- Inicio contadores principal : mobile----- */
+
+#contadores {
+    background-color: $silverBck;
+    width: auto;
+    margin-bottom: 30px;
+    /* margin: 30px 0px; */
+    padding: 60px 0px 20px 0px;
+    z-index: 99;
+
+}
+
+#contadores__items {
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.contador__contenedor {
+    background-color: $white;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    font-size: $tittleMobile;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+}
+
+.contador__contenedor {
+    h3 {
+        color: $blackTitle;
+    }
+}
+
+.contador__description {
+    font-size: $text;
+    margin: 15px;
+}
+
+.contador__description span {
+    color: $silverText;
+}
+
+#contador-1 {
+    width: 200px;
+    text-align: center;
+    left: 23%;
+    margin-bottom: 25px;
+}
+
+#contador-2 {
+    width: 200px;
+    text-align: center;
+    left: 43%;
+    margin-bottom: 25px;
+}
+
+#contador-3 {
+    width: 200px;
+    text-align: center;
+    left: 63%;
+}
+
+/* ----- Fin contadores principal : mobile ----- */
+
+/* ----- Inicio contadores principal : Tablet Gra----- */
+
+@media screen and (min-width: 800px) {
+
+    #contadores {
+        z-index: 10;
+    }
+
+    #contadores__items {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+}
+
+/* ----- Fin contadores principal : Tablet Gra----- */
+
+/* ----- Inicio contadores principal : Intermedio----- */
+
+@media screen and (min-width: 957px) {
+        #contadores {
+            margin-bottom: 0px;
+        }
+    }
+
+    /* ----- Inicio contador : desktop ----- */
+
+    @media screen and (min-width: 1200px) {
+
+    #contadores{
+        display: grid;
+        grid-template-columns: 0.6fr;
+        justify-content: center;
+
+    }
+
+
+    .contador-1, .contador-2, .contador-3 {
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    
+
+}
+
+/* ----- Fin contador : desktop -----*/
+
+
+
+
+// ----------------------------------- Contadores Servicios -----------------------------------
+
+#contadoresSer {
+    background-color: $white;
+}
+
+
+@media screen and (min-width: 1200px) {
+    #contadoresSer {
+        display: grid;
+        grid-template-columns: 0.6fr;
+        justify-content: center;
+    }
+}

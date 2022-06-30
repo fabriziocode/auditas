@@ -1,0 +1,367 @@
+/* ----- Inicio banner principal : mobile----- */
+
+
+.bannerpp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.3fr 1fr;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+    z-index: 97;
+    padding-bottom: 40px;
+}
+
+.backBannerPP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../../assets/1_home/Banner-principal-mobile-auditas-consulting.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.bannerpp__fullTextA {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerpp__fullText{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.bannerpp__fullText--h1{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: $tittleMobile;
+    padding: 0px 30px;
+    color: $blackTitle;
+    line-height: 50px;
+}
+
+.bannerppSpanbtt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0px 30px;
+}
+
+.bannerpp__fullText--span{
+    color: $silverText;
+    font-size: $textBanner;
+    line-height: 30px;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.button-pp{
+    padding: 10px 25px 10px 25px;
+    font-size: $textButtonL;
+    background-color: $yellowPp;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button-pp:hover{
+    background-color: $yellowDark;
+    color: $white;
+}
+
+
+/* ----- Fin banner principal : mobile ----- */
+
+
+
+/* ----- Inicio banner secundario : mobile----- */
+
+.imgBannerSecB {
+    display: none;
+}
+
+#banner-secundario{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 95;
+}
+
+.banner-secundario__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    vertical-align: middle;
+    font-size: $text;
+    line-height: 1.8;
+    color: $silverText;
+    padding: 0px 30px;
+
+}
+
+.imgBannerSec {
+    display: flex;
+    width: 100%;
+}
+
+/* ----- Fin banner secundario : mobile ----- */
+
+
+
+/* ----- Fin carrusel experiencia : mobile ----- */
+
+
+/* ------------------------------ Fin de CSS Mobile ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Tablet Peq ------------------------------ */
+
+@media screen and (min-width: 600px) {
+    
+    /* ----- Inicio banner principal : tablet peq ----- */
+
+    .bannerpp {
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .backBannerPP {
+        background-image: url(../../assets/1_home/Banner-Principal-tablet-1.jpg);
+        background-position-y: -80px;
+    }
+
+
+    /* ----- Fin banner principal : tablet peq ----- */
+
+
+    /* ----- Inicio banner secundario : tablet peq ----- */
+
+    #banner-secundario{
+        display: grid;
+        grid-template-rows: 0.4fr 2fr;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        z-index: 95;
+    }
+    
+    .banner-secundario__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content:center;
+        vertical-align: middle;
+        font-size: $text;
+        line-height: 1.8;
+        color: $silverText;
+        padding: 0px 70px;
+    }
+    
+    .imgBannerSec {
+        display: flex;
+        width: 100%;
+    }
+}
+
+    /* ----- Fin banner secundario : tablet peq ----- */
+
+
+
+/* ------------------------------ Fin de CSS Tablet Peq ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Tablet Gra ------------------------------ */
+
+@media screen and (min-width: 800px) {
+
+    /* ----- Inicio banner principal : tablet gra ----- */
+
+    .bannerpp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+        height: 350px;
+        padding-bottom: 0px;
+    }
+    
+
+    .backBannerPP {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        background-image: url(../../assets/1_home/Banner-Principal.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        order: 2;
+        /* Profe se que en clase hablamos de que esto no es muy recomendable (order) hacerlo, pero la razón es que en mobile el orden lo necesitaba primero la imagen y despues el texto, en este caso lo necesito primero el texto y despues la imagen, entonces por eso utilice order */
+        z-index: -1;
+    }
+
+    .bannerpp__fullTextA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+
+    /* ----- Fin banner principal : tablet gra ----- */
+
+
+    /* ----- Inicio banner secundario : tablet gra ----- */
+
+    #banner-secundario{
+        display: grid;
+        grid-template-rows: 0.4fr 6fr;
+        background-size: cover;
+        width: 100%;
+        z-index: 93;
+    }
+    
+    .banner-secundario__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content:center;
+        vertical-align: middle;
+        font-size: $text;
+        line-height: 1.8;
+        color: $silverText;
+        padding: 0px 70px;
+    }
+    
+    .imgBannerSec {
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+
+/* ------------------------------ Fin de CSS Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Intermedio entre Tablet Gra & Desketop ------------------------------ */
+
+@media screen and (min-width: 957px) {
+
+
+    /* ----- Inicio banner secundario : intermedio----- */
+
+    .imgBannerSec {
+        display: none;
+    }
+
+    #banner-secundario {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 500px;
+    }
+    
+    .imgBannerSecB {
+        display: flex;
+        background-image: url("../../assets/1_home/prueba-1.png");
+        background-size: cover;
+        justify-content: left;
+        order: 1;
+
+    }
+
+
+
+    .banner-secundario__text {
+        order: 2;
+    }
+
+    /* ----- Fin banner secundario : intermedio -----*/
+
+}
+
+/* ------------------------------ Fin de CSS Intermedio entre Tablet Gra & Desketop ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Desktop ------------------------------ */
+    @media screen and (min-width: 1200px) {
+
+    /* ----- Inicio banner principal : desktop ----- */
+
+    .bannerpp{
+        height: 610px;
+        grid-template-columns: 1fr 1.2fr
+        
+    }
+    
+    .backBannerPP {
+        background-position: -545px
+    }
+
+    .bannerpp__fullText--h1{
+    font-size: 55px;
+    }
+
+    .bannerpp__fullText--span {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    /* ----- Fin banner principal : desktop -----*/
+
+}
+
+
+
+/* ------------------------------ Fin de CSS Desketop ------------------------------ */
+
+/* ------------------------------ Inicio de CSS > Desktop ------------------------------ */
+
+@media screen and (min-width: 1400px) {
+
+    /* ----- Inicio banner principal : > desktop ----- */
+
+    .bannerpp{
+        height: 580px;
+        grid-template-columns: 1fr 1.5fr
+        
+    }
+    
+    .backBannerPP {
+        background-position: right;
+        background-size: auto 100%;
+
+    }
+
+    /* ----- Fin banner principal : > desktop -----*/
+
+
+    /* ----- Inicio banner secundario : > desktop ----- */
+
+    /* #banner-secundario {
+        height: 500px;
+        background-repeat: no-repeat;
+    } */
+
+    /* .imgBannerSec {
+
+        background-position-x: 0px;
+    } */
+
+}
+/* ----- Fin banner secundario : desktop -----*/
+
+/* ------------------------------ Fin de CSS > Desktop ------------------------------ */
+
+

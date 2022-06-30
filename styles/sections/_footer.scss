@@ -1,0 +1,166 @@
+/* ----- Inicio Footer : mobile----- */
+
+.footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: $silverBck;
+    padding: 40px 30px;
+
+    a {
+        font-size: $textFooter;
+    }
+}
+
+.footer-items {
+    padding: 60px;
+    text-align: center;
+}
+
+.logoFooterAud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+.footer-items--col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-items--col2 {
+    line-height: 25px;
+        h3 {
+            display: inline;
+            line-height: 25px;
+        }
+}
+
+.footer-items--col2-a,
+.footer-items--col2-b,
+.footer-items--col2-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* ----- Inicio Footer with Hr Intermedio contacto : mobile----- */
+
+.footerWithHr{
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    background-color: $silverBck;
+    padding: 40px 30px;
+    align-items: center;
+}
+
+.divHrInter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.hrInter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: v$silverText;
+    border: 0.5px solid;
+    width: 40vh;
+}
+
+/* ----- Fin Footer with Hr Intermedio contacto : mobile----- */
+
+/* ----- Fin Footer : mobile----- */
+
+/* ----- Inicio footer : tablet peq ----- */
+
+@media screen and (min-width: 600px) {
+
+    .footer-items--col1 {
+        margin-bottom: 0px;
+    }
+    
+    .footer-items--col2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .form-containerContacto {
+        padding: 30px; 
+    }
+
+    .form-containerContacto {
+        margin: 10px 70px;
+
+    }
+    
+}
+
+/* ----- Fin Footer : tablet peq----- */
+
+/* ----- Inicio footer : intermedio ----- */
+
+@media screen and (min-width: 957px) {
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logoFooterAud {
+        align-items: flex-start;
+    }
+
+    .footer-items--col1 {
+        display: block;
+    }
+
+    .footer-items--col2 {
+        order: 2;
+    }
+    
+    .footerWithHr {
+        grid-template-areas: 
+        "hr hr"
+        "logoFoo fooCol1"
+        "fooCol2 fooCol2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr;
+            .divHrInter {
+                grid-area: hr;
+            }
+            .logoFooterAud {
+                grid-area: logoFoo;
+            }
+            .footer-items--col1 {
+                grid-area: fooCol1;
+            }
+            .footer-items--col2{
+                grid-area: fooCol2;
+                justify-content: flex-start;
+                    a {
+                        margin: 50px 20px 50px 0px;
+                    }
+            }
+    }
+
+}
+
+

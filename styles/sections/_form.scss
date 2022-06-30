@@ -1,0 +1,248 @@
+/* ----- Inicio form : mobile----- */
+
+.button-ppb{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+    font-size: $textButtonL;
+    background-color: $yellowPp;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    transition: all 0.5s;
+        &:hover {
+            font-weight: 600;
+            background-color: $yellowDark;
+            color: $white;
+        }
+}
+
+.formHome {
+    display: grid;
+    grid-template-rows: 0,5fr 1fr;
+    grid-row-gap: 20px;
+    background-color: $silverBck;
+    padding: 30px 0px;
+}
+
+.formHome__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    vertical-align: middle;
+    font-size: $text;
+    line-height: 1.8;
+    color: var(--main-textColor);
+    padding: 0px 30px;
+        p {
+            color: $silverText;
+            font-size: $text;
+        }
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    width: 1fr;
+    height: 1fr;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 11px 0px #8a8a8a73(0,0,0,0.45);
+    box-shadow: 0px 0px 11px 0px #8a8a8a73;
+    padding: 30px;
+    margin: 10px;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.borders-input{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    margin: 7px 0px 0px 0px;
+    border-radius: 30px;
+    border-color: #e0e0e073;
+    padding: 0px 20px;
+}
+
+.select-input{
+    margin: 7px 0px 10px 0px;
+    height: 40px;
+    font-size: $textButtonS;
+    padding: 5px 20px 5px 20px;
+}
+
+/* ----- Fin form : mobile ----- */
+
+/* ------------------------------ Inicio de CSS Tablet Peq ------------------------------ */
+
+@media screen and (min-width: 600px) {
+
+    .formHome__text {
+        padding: 0px 70px;
+    }
+    
+    .form-container {
+        margin: 10px 70px;
+    }
+}
+
+ /* ----- Fin form : tablet peq ----- */
+
+ /* ------ Inicio de CSS Interedio ------ */
+
+ @media screen and (min-width: 957px) {
+    
+    .formHome__text {
+        padding: 0px 200px;
+    }
+    
+    .form-container {
+        margin: 10px 200px;
+    }
+ }
+
+ /* ----- Fin form : intermedio ----- */  
+
+
+ /* ----- Inicio form : desktop ----- */
+
+ @media screen and (min-width: 1200px) {
+
+ .formHome {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 80px 60px;
+    
+}
+
+.formHome__text {
+    padding: 0px 10px 0px 40px;
+}
+
+.form-container {
+    margin: 10px 40px;
+    padding: 40px;
+}
+
+}
+
+/* ----- Fin banner form : desktop ----- */
+
+
+/* ------------------------------ Form contacto CSS Interedio ------------------------------ */
+
+/* ----- Inicio form contacto : mobile----- */
+
+.form-contacto {
+    display: grid;
+    grid-template-rows: 0,5fr 1fr;
+    grid-row-gap: 20px;
+    background-color: $silverBck;
+    padding: 30px 0px;
+}
+
+.form-containerContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 1.8;
+    color: $silverText;
+    padding: 0px 30px;
+}
+
+.form-containerContacto{
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    width: 1fr;
+    height: 1fr;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 11px 0px #8a8a8a73(0,0,0,0.45);
+    box-shadow: 0px 0px 11px 0px #8a8a8a73;
+    padding: 30px;
+    margin: 10px;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.borders-input{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    margin: 7px 0px 0px 0px;
+    border-radius: 30px;
+    border-color: #e0e0e073;
+    padding: 0px 20px;
+}
+
+.select-input{
+    margin: 7px 0px 10px 0px;
+    height: 40px;
+    font-size: $textButtonS;
+    padding: 5px 20px 5px 20px;
+}
+
+.button-ppb{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: $yellowPp;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    transition: all 0.5s;
+        &:hover {
+            font-weight: 600;
+            background-color: $yellowDark;
+            color: $white;
+        }
+}
+
+
+/* ----- Fin form contacto : mobile ----- */
+
+
+
+/* ----- Inicio form contacto : intermedio ----- */
+
+@media screen and (min-width: 957px) {
+
+    .form-containerContacto {
+        padding: 30px; 
+    }
+    
+    .form-containerContacto {
+        margin: 10px 200px;
+    
+    }
+}
+
+    /* ----- Fin form contacto : intermedio -----*/
+
+
+    /* ----- Inicio form contacto : desktop ----- */
+
+    @media screen and (min-width: 1200px) {
+        .form-containerContacto {
+            padding: 40px; 
+        }
+        
+        .form-containerContacto {
+            margin: 10px 300px;
+        
+        }
+    }

@@ -1,0 +1,38 @@
+$tittleBanner: 55px;
+$tittleMobile: 43px;
+$subTittle: 30px;
+$textBanner: 20px;
+$textButtonL: 18px;
+$text: 16px;
+$textButtonS: 14px;
+$textFooter: 14px;
+$textButtonXs: 12px;
+
+*{
+    font-family: "Open Sans", sans-serif;
+    color: $silverText;
+}
+
+h2 {
+    font-size: $subTittle;
+    color: $blackTitle;
+}
+
+span {
+    font-size: $text;
+    color: $silverText;
+    line-height: 26px;
+}
+
+p {
+    font-size: $tittleMobile;
+    color: $silverText;
+    line-height: 26px;
+}
+
+footer {
+    h3 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

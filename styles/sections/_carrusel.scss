@@ -1,0 +1,71 @@
+/* ----- Inicio carrusel experiencia : mobile----- */
+
+.textSlider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: $yellowPp;
+    padding: 25px 10px 10px 10px;
+        h2 {
+            color: $white;
+        }
+}
+
+.slider {
+    display:grid;
+    grid-template-columns: 1fr;
+    background: $yellowPp;
+    height: 150px;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 0px 7px 0px;
+        .slide-track {
+            animation: scroll 40s linear infinite;
+            display: flex;
+            width: calc(250px * 18);
+        }
+}
+
+.slider::before, .slider::after {
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    z-index: 94;
+}
+
+
+.slider-track {
+    height: 20%;
+}
+
+.slider {
+    .slide {
+        height: 125px;
+        margin: 0px 30px;
+    }
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+
+}
+
+.imgSlide {
+    display: flex;
+    flex-direction: row;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}

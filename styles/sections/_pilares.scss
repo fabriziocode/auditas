@@ -1,0 +1,89 @@
+/* ----- Inicio pilares : mobile----- */
+
+.pilares{
+    z-index: 93;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    padding: 40px 30px;
+    align-items: center;
+    justify-content: center;
+        p {
+            color: $silverText;
+            font-size: $text;
+        }
+}
+
+.pilar-1{
+    font-size: $text;
+        img {
+            width: 180px;
+        }
+}
+
+.pilar-2{
+    font-size: $text;
+        img {
+            width: 180px;
+        }
+}
+
+.pilar-3{
+    font-size: $text;
+        img {
+            width: 180px;
+        }
+}
+
+/* ----- Fin pilares : mobile ----- */
+
+/* ----- Inicio pilares : tablet peq ----- */
+
+@media screen and (min-width: 600px) {
+    .pilares{
+        padding: 40px 70px;
+    }
+}
+
+
+/* ----- Fin pilares : tablet peq ----- */
+
+/* ----- Inicio pilares : intermedio ----- */
+
+@media screen and (min-width: 957px) {
+
+    .pilares {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        padding: 40px 30px 40px 65px;
+        margin: 50px 0px;
+    }
+    
+    .pilar-1, .pilar-2, .pilar-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* ----- Inicio Pilares Nosotros : intermedio ----- */
+
+    .pilaresNoso {
+        margin: 0px;
+    }
+
+    /* ----- fin Pilares Nosotros : intermedio ----- */
+
+    
+}
+
+/* ----- Fin pilares : intermedio -----*/
+
+/* ----- Inicio Pilares Nosotros : mobile ----- */
+
+.pilaresNoso {
+    background-color: var(--silver-backgroundColor);
+}
+
+/* ----- Fin Pilares Nosotros : mobile ----- */

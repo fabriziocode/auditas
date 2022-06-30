@@ -1,39 +1,3 @@
-/* ------------------------- Inicio de CSS Generales ------------------------- */
-
-/* reset css */
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/* tipografia */
-*{
-    font-family: "Open Sans", sans-serif;
-    color: #1a1b2f;
-}
-
-h2 {
-    font-size: 30px;
-    color: var(--main-titleColor);
-}
-
-span {
-    font-size: 16px;
-    color: var(--main-textColor);
-    line-height: 26px;
-}
-
-p {
-    font-size: var(--fontTextMobile);
-    color: var(--main-textColor);
-    line-height: 26px;
-}
-
-footer h3 {
-    font-size: 14px;
-    font-weight: 400;
-}
-
 :root {
     --main-yColor: #f7b602;
     --main-textColor: #425466;
@@ -48,9 +12,13 @@ footer h3 {
 
 }
 
-body {
-    height: 100vh;
-}
+
+
+
+
+
+
+
 
 /* ------------------------------ Fin de CSS Generales ------------------------------ */
 
@@ -58,135 +26,6 @@ body {
 
 /* ------------------------------ Inicio de CSS Mobile ------------------------------ */
 
-/* ----- Inicio header_menu : mobile----- */
-
-.header__menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 72px;
-    grid-column-gap: 10px;
-    background-color: var(--white-backgroundColor);
-    /* padding: 0px 30px; */
-    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.13);
-        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.13);
-    z-index: 99;
-}
-
-header nav ul a{
-    text-decoration: none;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-.logoAuditas {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0px 30px;
-}
-
-#header__menuOption--logo {
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-}
-
-.iconoMenuMobile {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0px 30px;
-
-}
-
-.checkboxMenuMobile {
-    display: none;
-}
-
-
-.menuHambu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.iconMenuMobileim {
-    height: 35px;
-    display: flex;
-    cursor: pointer;
-}
-
-.header__menuList {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    background-color: var(--blackBlue-backgroundColor);
-}
-
-.menuList {
-    position: fixed;
-    top: 72px;
-    left: 0;
-    background-color: var(--blackBlue-backgroundColor);
-    text-align: center;
-    transition: all .5s;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 0vh;
-    z-index: 98;
-
-    /* display: none; */
-}
-
-
-
-.menuList li {
-    display: none;
-    /* flex-direction: column; */
-    line-height: 30px;
-    margin: 50px 0;
-    transition: all .5s;
-    text-align: center;
-    /* height: 100%; */
-}
-
-.menuList li a:hover{
-    color: var(--main-yColor);
-    transition: .3s;
-}
-
-/* #menuHambu {
-    display: none;
-} */
-
-#menuHambu:checked ~ .menuList {
-    height: 100vh;
-
-}
-
-#menuHambu:checked ~ .menuList li {
-    display:block;
-}
-
-
-
-.menuList li a {
-    color: var(--white-backgroundColor);
-
-}
-
-.logoLinkedIn {
-    height: 25px;
-    padding-top: 10px;
-    transition-property: scale 2s;
-}
-
-
-/* ----- Fin header_menu : mobile ----- */
 
 /* ----- Inicio banner principal : mobile----- */
 
@@ -274,75 +113,7 @@ header nav ul {
 
 /* ----- Fin banner principal : mobile ----- */
 
-/* ----- Inicio contadores principal : mobile----- */
 
-#contadores{
-    background-color: var(--silver-backgroundColor);
-    width: auto;
-    margin-bottom: 30px;
-    /* margin: 30px 0px; */
-    padding: 60px 0px 20px 0px;
-    z-index: 99;
-
-}
-
-#contadores__items{
-
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-}
-
-.contador__contenedor{
-    background-color: var(--white-backgroundColor);
-    width: 200px;
-    height: 100px;
-    line-height: 100px;
-    vertical-align: middle;
-    font-size: var(--fontTitleMobile);
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
-        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
-}
-
-.contador__contenedor h3 {
-    color: var(--main-titleColor);
-}
-
-.contador__description{
-    font-size: var(--fontTextMobile);
-    margin: 15px;
-}
-
-.contador__description span{
-    color: var(--main-textColor)
-
-}
-
-
-
-#contador-1{
-    width: 200px;
-    text-align: center;
-    left: 23%;
-    margin-bottom: 25px;
-}
-
-#contador-2{
-    width: 200px;
-    text-align: center;
-    left: 43%;
-    margin-bottom: 25px;
-}
-
-#contador-3{
-    width: 200px;
-    text-align: center;
-    left: 63%;
-}
-
-/* ----- Fin contadores principal : mobile ----- */
 
 /* ----- Inicio banner secundario : mobile----- */
 
@@ -380,285 +151,10 @@ header nav ul {
 
 /* ----- Fin banner secundario : mobile ----- */
 
-/* ----- Inicio carrusel experiencia : mobile----- */
 
-.textSlider{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    background-color: var(--main-yColor);
-    padding: 25px 10px 10px 10px;
-}
-
-.textSlider h2 {
-    color: var(--white-backgroundColor);
-}
-
-
-.slider {
-    display:grid;
-    grid-template-columns: 1fr;
-    background: var(--main-yColor);
-    height: 150px;
-    /* margin: auto; */
-    align-items: center;
-    /* width: 100%; */
-    overflow: hidden;
-    padding: 0px 0px 7px 0px;
-}
-
-.slider::before, .slider::after {
-    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100%;
-    position: absolute;
-    z-index: 94;
-}
-
-
-.slider-track {
-    height: 20%;
-    /* width: 100vh; */
-}
-
-.slider .slide-track {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 18);
-
-
-}
-
-.slider .slide {
-    height: 125px;
-    margin: 0px 30px;
-}
-
-.slide {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-
-}
-
-.imgSlide {
-    display: flex;
-    flex-direction: row;
-
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-250px * 9));
-    }
-}
 
 /* ----- Fin carrusel experiencia : mobile ----- */
 
-/* ----- Inicio form : mobile----- */
-
-.formHome {
-    display: grid;
-    grid-template-rows: 0,5fr 1fr;
-    grid-row-gap: 20px;
-    background-color: var(--silver-backgroundColor);
-    padding: 30px 0px;
-}
-
-.formHome__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content:center;
-    vertical-align: middle;
-    font-size: 16px;
-    line-height: 1.8;
-    color: var(--main-textColor);
-    padding: 0px 30px;
-}
-
-.formHome__text p {
-    color: var(--main-textColor);
-}
-
-.form-container{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white-backgroundColor);
-    width: 1fr;
-    height: 1fr;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 11px 0px #8a8a8a73(0,0,0,0.45);
-    box-shadow: 0px 0px 11px 0px #8a8a8a73;
-    padding: 30px;
-    margin: 10px;
-}
-
-.form-items {
-    display: flex;
-    flex-direction: column;
-}
-
-.borders-input{
-    display: flex;
-    flex-direction: column;
-    height: 30px;
-    margin: 7px 0px 0px 0px;
-    border-radius: 30px;
-    border-color: #e0e0e073;
-    padding: 0px 20px;
-}
-
-.select-input{
-    margin: 7px 0px 10px 0px;
-    height: 40px;
-    font-size: 14px;
-    padding: 5px 20px 5px 20px;
-}
-
-.button-ppb{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 25px 10px 25px;
-    margin-top: 10px;
-    font-size: 18px;
-    background-color: #f7b602;
-    border: none;
-    border-radius: 30px;
-    text-align: left;
-    transition: all 0.5s;
-}
-
-.button-ppb:hover{
-    font-weight: 600;
-    background-color: #d39b02;
-    color: #ffffff;
-}
-
-/* ----- Fin form : mobile ----- */
-
-/* ----- Inicio pilares : mobile----- */
-
-.pilares{
-    z-index: 93;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-row-gap: 40px;
-    padding: 40px 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-.pilar-1{
-    /* position: absolute;
-    top: 45px;
-    left: 7%; */
-    /* width: 400px; */
-    font-size: 16px; 
-}
-
-.pilar-1 img{
-    width: 180px;
-}
-
-.pilar-2{
-    /* position: absolute;
-    top: 45px;
-    left: 40%; */
-    /* width: 400px; */
-    font-size: 16px; 
-}
-
-.pilar-2 img{
-    width: 180px;
-}
-
-.pilar-3{
-    /* position: absolute;
-    top: 45px;
-    left: 70%; */
-    /* width: 400px; */
-    font-size: 16px; 
-}
-
-.pilar-3 img{
-    width: 180px;
-}
-
-.pilares p{
-    color: #425466;
-}
-
-
-
-/* ----- Fin pilares : mobile ----- */
-
-/* ----- Inicio Footer : mobile----- */
-
-.footer{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: var(--silver-backgroundColor);
-    padding: 40px 30px;
-}
-
-.footer-items{
-    padding: 60px;
-    text-align: center;
-}
-
-.logoFooterAud {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-.logo-footer{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    text-align: center; */
-    height: 50px;
-    
-}
-
-.footer-items--col1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 30px;
-    margin-bottom: 20px;
-}
-
-.footer-items--col2 h3{
-    display: inline;
-    line-height: 25px;
-    
-}
-
-.footer-items--col2 {
-    /* padding: 20px; */
-    line-height: 25px;
-}
-
-.footer-items--col2-a,
-.footer-items--col2-b,
-.footer-items--col2-c {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-footer a{
-    font-size: 14px;
-}
 
 /* ------------------------------ Fin de CSS Mobile ------------------------------ */
 
@@ -680,13 +176,6 @@ footer a{
 
     /* ----- Fin banner principal : tablet peq ----- */
 
-    /* ----- Inicio contadores principal : tablet peq ----- */
-
-
-            /* No se agregan o cambian reglas CSS a esta sección para esta esta resolución */
-
-
-    /* ----- Fin contadores principal : tablet peq ----- */
 
     /* ----- Inicio banner secundario : tablet peq ----- */
 
@@ -727,41 +216,7 @@ footer a{
 
     /* ----- Fin carrusel experiencia : tablet peq ----- */
 
-    /* ----- Inicio form : tablet peq ----- */
-
-    .formHome__text {
-        padding: 0px 70px;
-    }
     
-    .form-container {
-        margin: 10px 70px;
-    }
-
-
-    /* ----- Fin form : tablet peq ----- */
-
-    /* ----- Inicio pilares : tablet peq ----- */
-
-    .pilares{
-        padding: 40px 70px;
-    }
-
-    /* ----- Fin pilares : tablet peq ----- */
-
-    /* ----- Inicio footer : tablet peq ----- */
-
-    .footer-items--col1 {
-        margin-bottom: 0px;
-    }
-    
-    .footer-items--col2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-
-    }
-
 }
 
 /* ------------------------------ Fin de CSS Tablet Peq ------------------------------ */
@@ -809,20 +264,6 @@ footer a{
 
     /* ----- Fin banner principal : tablet gra ----- */
 
-    /* ----- Inicio contadores principal : tablet gra ----- */
-
-    #contadores {
-        z-index: 10;
-    }
-
-    #contadores__items {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-    }
-
-
-    /* ----- Fin contadores principal : tablet gra ----- */
 
     /* ----- Inicio banner secundario : tablet gra ----- */
 
@@ -858,103 +299,8 @@ footer a{
 
 /* ------------------------------ Inicio de CSS Intermedio entre Tablet Gra & Desketop ------------------------------ */
 
-
-/* ----- Inicio header : intermedio----- */
-
 @media screen and (min-width: 957px) {
 
-    .menuList li {
-        display: flex;
-    }
-
-    .menuList li a {
-        color: var(--main-titleColor);
-    
-    }
-
-
-
-    .iconoMenuMobile {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .iconMenuMobileim {
-        display: none;
-    }
-
-    .checkboxMenuMobile {
-        display: none;
-    }
-
-    .menuList {
-        display: flex;
-        flex-direction: row;
-        flex-flow: 2;
-        position: unset;
-        transition: unset;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-
-    }
-
-    .menuList li {
-        padding: 0px 20px;
-        display: flex;
-        transition: unset;
-        margin: 0;
-        align-items: center;
-
-    } 
-
-    #menuHambu:checked ~ .menuList {
-        height: 0vh;
-    
-    }
-    
-    #menuHambu:checked ~ .menuList li {
-        display:flex;
-    }
-
-
-    .logoLinkedIn:hover {
-        transform: scale(120%);
-    
-    }
-
-    .menuList li:hover {
-        color: var(--main-yColor);
-
-    }
-
-    .logoLinkedIn {
-        transition: all 1.3s;
-    }
-    
-    .logoLinkedIn:hover {
-        transform: scale(120%);
-    
-    }
-
-    /* ----- Fin header : intermedio ----- */
-
-    /* ----- Inicio banner principal : intermedio ----- */
-
-
-            /* No se agregan o cambian reglas CSS a esta sección para esta esta resolución */
-
-
-    /* ----- Fin banner principal : intermedio ----- */
-
-    /* ----- Inicio contadores : intermedio----- */
-
-    #contadores {
-        margin-bottom: 0px;
-    }
-
-    /* ----- Fin contadores : intermedio----- */
 
     /* ----- Inicio banner secundario : intermedio----- */
 
@@ -994,73 +340,11 @@ footer a{
     /* ----- Fin experiencia : intermedio ----- */
 
 
-    /* ----- Inicio form : intermedio ----- */
-
-    .formHome__text {
-        padding: 0px 200px;
-    }
-    
-    .form-container {
-        margin: 10px 200px;
-    }
-
-    /* ----- Fin form : intermedio ----- */
-
-
-    /* ----- Inicio pilares : intermedio ----- */
-
-    .pilares {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 10px;
-        padding: 40px 30px 40px 65px;
-        margin: 50px 0px;
-    }
-
-    .pilar-1, .pilar-2, .pilar-3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
-    /* ----- Fin pilares : intermedio -----*/
-
-    /* ----- Inicio footer : intermedio ----- */
-
-    .footer {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .logoFooterAud {
-        align-items: flex-start;
-    }
-
-    .footer-items--col1 {
-        display: block;
-    }
-
-    .footer-items--col2 {
-        order: 2;
-    }
-
-
-    /* ----- Fin footer : intermedio ----- */
-    
-}
-
 
 /* ------------------------------ Fin de CSS Intermedio entre Tablet Gra & Desketop ------------------------------ */
 
 /* ------------------------------ Inicio de CSS Desktop ------------------------------ */
-
-@media screen and (min-width: 1200px) {
-
-    .menuList {
-        justify-content: flex-end;
-    }
-
+    @media screen and (min-width: 1200px) {
 
     /* ----- Inicio banner principal : desktop ----- */
 
@@ -1085,24 +369,7 @@ footer a{
 
     /* ----- Fin banner principal : desktop -----*/
 
-    /* ----- Inicio contador : desktop ----- */
-
-    #contadores{
-        display: grid;
-        grid-template-columns: 0.6fr;
-        justify-content: center;
-
-    }
-
-
-    .contador-1, .contador-2, .contador-3 {
-        
-        display: flex;
-        flex-direction: row;
-        
-    }
-
-    /* ----- Fin contador : desktop -----*/
+    
 
     /* ----- Inicio banner secundario : desktop ----- */
 
@@ -1121,25 +388,7 @@ footer a{
     /* ----- Fin banner experiencia : desktop ----- */
 
 
-    /* ----- Inicio form : desktop ----- */
-
-    .formHome {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        padding: 80px 60px;
-        
-    }
-
-    .formHome__text {
-        padding: 0px 10px 0px 40px;
-    }
     
-    .form-container {
-        margin: 10px 40px;
-        padding: 40px;
-    }
-
-    /* ----- Fin banner form : desktop ----- */
     
 
 }
@@ -1259,14 +508,7 @@ footer a{
 
 /* ----- Fin info Nosotros : mobile ----- */
 
-/* ----- Inicio Pilares Nosotros : mobile ----- */
 
-.pilaresNoso {
-    background-color: var(--silver-backgroundColor);
-}
-
-
-/* ----- Fin Pilares Nosotros : mobile ----- */
 
 /* ------------------------------ Inicio de CSS Nosotros Tablet Peq ------------------------------ */
 
@@ -1285,9 +527,6 @@ footer a{
     }
 
 }
-
-
-/* ----- Fin Pilares Nosotros : tablet peq ----- */
 
 /* ------------------------------ Inicio de CSS Nosotros Tablet Gra ------------------------------ */
 
@@ -1356,14 +595,7 @@ footer a{
 
     /* ----- Fin info Nosotros : intermedio ----- */
 
-    /* ----- Inicio Pilares Nosotros : intermedio ----- */
-
-    .pilaresNoso {
-        margin: 0px;
-    }
-
-    /* ----- fin Pilares Nosotros : intermedio ----- */
-
+    
 }
 
 /* ------------------------------ Fin de CSS Intermedio Nosotros entre Tablet Gra & Desketop ------------------------------ */
@@ -1447,14 +679,6 @@ footer a{
     background: linear-gradient(45deg, #dfab20, #ffbc00);
     height: 200px;
 }
-
-/* ----- Inicio Contadores Servicios : mobile ----- */
-
-#contadoresSer {
-    background-color: var(--white-backgroundColor);
-}
-
-/* ----- Fin Contadores Servicios : mobile ----- */
 
 /* ----- Inicio Planes Servicios : mobile ----- */
 
@@ -1727,12 +951,6 @@ footer a{
         padding: 0px 200px;
     }
 
-    #contadoresSer {
-        display: grid;
-        grid-template-columns: 0.6fr;
-        justify-content: center;
-    }
-
 
     .serv-contenedor {
         grid-template-areas: 
@@ -1995,114 +1213,7 @@ footer a{
 
 /* ----- Fin info contacto : mobile ----- */
 
-/* ----- Inicio form contacto : mobile----- */
 
-.form-contacto {
-    display: grid;
-    grid-template-rows: 0,5fr 1fr;
-    grid-row-gap: 20px;
-    background-color: var(--silver-backgroundColor);
-    padding: 30px 0px;
-}
-
-.form-containerContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content:center;
-    vertical-align: middle;
-    font-size: 16px;
-    line-height: 1.8;
-    color: var(--main-textColor);
-    padding: 0px 30px;
-}
-
-.form-containerContacto{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white-backgroundColor);
-    width: 1fr;
-    height: 1fr;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 11px 0px #8a8a8a73(0,0,0,0.45);
-    box-shadow: 0px 0px 11px 0px #8a8a8a73;
-    padding: 30px;
-    margin: 10px;
-}
-
-.form-items {
-    display: flex;
-    flex-direction: column;
-}
-
-.borders-input{
-    display: flex;
-    flex-direction: column;
-    height: 30px;
-    margin: 7px 0px 0px 0px;
-    border-radius: 30px;
-    border-color: #e0e0e073;
-    padding: 0px 20px;
-}
-
-.select-input{
-    margin: 7px 0px 10px 0px;
-    height: 40px;
-    font-size: 14px;
-    padding: 5px 20px 5px 20px;
-}
-
-.button-ppb{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 25px 10px 25px;
-    margin-top: 10px;
-    font-size: 18px;
-    background-color: #f7b602;
-    border: none;
-    border-radius: 30px;
-    text-align: left;
-    transition: all 0.5s;
-
-}
-
-.button-ppb:hover{
-    font-weight: 600;
-    background-color: #d39b02;
-    color: #ffffff;
-}
-
-/* ----- Fin form contacto : mobile ----- */
-
-
-/* ----- Inicio Hr Intermedio contacto : mobile----- */
-
-.footerWithHr{
-    display: grid;
-    grid-template-rows: 0.1fr 1fr 1fr 1fr;
-    background-color: var(--silver-backgroundColor);
-    padding: 40px 30px;
-    align-items: center;
-}
-
-.divHrInter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.hrInter{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-color: var(--main-textColor);
-    border: 0.5px solid;
-    width: 40vh;
-}
-
-/* ----- Fin footer contacto : mobile ----- */
 
 /* ------------------------------ Fin de CSS Contacto Mobile ------------------------------ */
 
@@ -2136,33 +1247,6 @@ footer a{
 
 
     /* ----- Fin info Contacto: Tablet Peq ----- */
-
-    /* ----- Inicio Form Contacto: Tablet Peq ----- */
-
-    .form-containerContacto {
-        padding: 30px; 
-    }
-
-    .form-containerContacto {
-        margin: 10px 70px;
-
-    }
-
-
-    
-
-
-     .footer-items--col1 {
-        margin-bottom: 0px;
-    }
-    
-    .footer-items--col2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-
-    }
 
 }
 
@@ -2220,53 +1304,6 @@ footer a{
 @media screen and (min-width: 957px) {
 
 
-    /* ----- Inicio form contacto : intermedio ----- */
-
-    .form-containerContacto {
-        padding: 30px; 
-    }
-    
-    .form-containerContacto {
-        margin: 10px 200px;
-    
-    }
-
-    /* ----- Fin form contacto : intermedio -----*/
-
-    /* ----- Inicio footer contacto : intermedio ----- */
-
-    .footerWithHr .divHrInter {
-        grid-area: hr;
-    }
-
-    .footerWithHr .logoFooterAud {
-        grid-area: logoFoo;
-    }
-
-    .footerWithHr .footer-items--col1  {
-        grid-area: fooCol1;
-
-    }
-
-    .footerWithHr .footer-items--col2 {
-        grid-area: fooCol2;
-        justify-content: flex-start;
-    }
-
-    .footerWithHr .footer-items--col2 a{
-        margin: 50px 20px 50px 0px;
-    }
-    
-
-    .footerWithHr {
-        grid-template-areas: 
-        "hr hr"
-        "logoFoo fooCol1"
-        "fooCol2 fooCol2";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.3fr 1fr 1fr;
-    }
-    
 }
 
 /* ------------------------------ Fin de CSS Intermedio Contacto entre Tablet Gra & Desketop ------------------------------ */
@@ -2304,26 +1341,6 @@ footer a{
 
     /* ----- Fin info contacto : desktop -----*/
 
-    /* ----- Inicio form contacto : desktop ----- */
-
-    .form-containerContacto {
-        padding: 40px; 
-    }
-    
-    .form-containerContacto {
-        margin: 10px 300px;
-    
-    }
-
 }
-
+}
 /* ------------------------------ Fin de CSS Desktop Contacto ------------------------------ */
-
-
-
-
-
-
-
-
-
