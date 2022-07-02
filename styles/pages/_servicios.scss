@@ -1,0 +1,335 @@
+/* ----- Inicio banner secundario Servicios : mobile ----- */
+
+.imgBannersSec__Serv {
+    background-image: url(../../assets/3_servicios/Banner-Secundario-Mobile--serv.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ----- Fin banner secundario Servicios : mobile ----- */
+
+/* ----- Inicio info Servicios : mobile ----- */
+
+.info__servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0px 30px;
+    margin: 40px 0px;
+        h2, h3 {
+            color: $blackTitle;
+        }
+        p {
+            color: $silverText;
+            line-height: 26px;
+        }
+}
+
+/* ----- Fin info Servicios : mobile ----- */
+
+.grad-plans {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #dfab20, #ffbc00);
+    height: 200px;
+}
+
+/* ----- Inicio Planes Servicios : mobile ----- */
+
+#planes-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.serv-1 {
+    grid-area: s1;
+}
+
+.serv-2 {
+    grid-area: s2;
+}
+
+.serv-3 {
+    grid-area: s3;
+    width: 0.7fr;
+    height: 250px;
+}
+
+.serv-4 {
+    grid-area: s4;
+}
+
+.serv-5 {
+    grid-area: s5;
+}
+
+.serv-contenedor {
+    display: grid;
+    grid-template-areas:
+    "s3 s3"
+    "s1 s2"
+    "s4 s5";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.4fr 1fr 1fr;
+    justify-items: center;
+    position: relative;
+    top: -100px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.servPlans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    width: 0.4fr;
+    height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
+    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+    transition: all 0.7s;
+        &:hover {
+            transform: scale (110%);
+        }
+}
+
+.serPlans:hover {
+    transform: scale (110%);
+}
+
+
+
+.servContenedorPri {
+    width: 250px;
+    height: 275px;
+}
+
+.servContenedorSec {
+    width: 150px;
+    height: 200px;
+}
+
+.button-ppd{
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+    font-size: $textButtonXs;
+    border: 1px solid $yellowPp;
+    background-color: $white;
+    border-radius: 30px;
+    text-align: left;
+    transition: all 0.5s;
+
+}
+
+/* ----- Fin Planes Servicios : mobile ----- */
+
+/* ----- Inicio banner talleres : mobile ----- */
+
+.bannerTalleres {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bannerTalleresTexts{
+    padding: 0px 30px;
+}
+
+.button-ppc{
+    padding: 10px 25px 10px 25px;
+    font-size: $textButtonS;
+    background-color: $yellowPp;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.5s;
+    &:hover {
+        background-color: $yellowDark;
+        color: $white;
+    }
+
+}
+
+.bannerTalleresImg {
+    background-image: url(../../assets/3_servicios/Banner-talleres-Mobile.jpg);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+}
+
+/* ----- Fin banner talleres : mobile ----- */
+
+/* ------------------------------ Fin de CSS Mobile Servicios ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Servicios Tablet Peq ------------------------------ */
+
+@media screen and (min-width: 600px) {
+
+    /* ----- Inicio Info Servicios : Tablet Peq ----- */
+    
+    .info__servicios{
+        padding: 0px 70px;
+    }
+
+    /* ----- Fin Info Servicios : Tablet Peq ----- */
+    
+    /* ----- Inicio Planes Servicios : Tablet Peq ----- */
+
+    .servContenedorPri {
+        width: 350px;
+    }
+
+    .servContenedorSec {
+        width: 250px;
+    }
+
+    /* ----- Fin Planes Servicios : Tablet Peq ----- */
+
+    /* ----- Inicio Banner Talleres Servicios : Tablet Peq ----- */
+
+    .bannerTalleres {
+        grid-template-rows: 1fr 1.5fr;
+    }
+    
+    .bannerTalleresTexts {
+        padding: 0px 70px 20px 70px;
+    }
+
+    /* ----- Fin Banner Talleres Servicios : Tablet Peq ----- */
+
+}
+
+
+/* ------------------------------ Fin de CSS Servicios Tablet Peq ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Servicios Tablet Gra ------------------------------ */
+
+@media screen and (min-width: 800px) {
+
+
+    /* ----- Inicio Banner Talleres Servicios : Tablet Gra ----- */
+
+    .imgBannersSec__Serv {
+        background-image: url(../../assets/3_servicios/banner-secundario-servicios.jpg);
+        z-index: -1;
+        background-position: -40px;
+    }
+
+    /* ----- Fin Banner Talleres Servicios : Tablet Gra ----- */
+
+    /* ----- Inicio Planes Servicios : Tablet Gra ----- */
+
+    .servContenedorPri {
+        width: 400px;
+    }
+
+    .servContenedorSec {
+        width: 325px;
+    }
+
+    /* ----- Fin Planes Servicios : Tablet Gra ----- */
+
+    /* ----- Inicio Banner talleres Servicios : Tablet Gra ----- */
+
+    .bannerTalleres {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+     /* ----- Fin Banner talleres Servicios : Tablet Gra ----- */
+    
+}
+
+/* ------------------------------ Fin de CSS Servicios Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Servicios Intermedio ------------------------------ */
+
+@media screen and (min-width: 957px) {
+
+    /* ----- Inicio Banner talleres Servicios : Intermedio ----- */
+
+    .bannerTalleresImg {
+        background-image: url(../../assets/3_servicios/banner-secundario-servicios-2.jpg);
+        background-size: cover;
+        background-position: 602px;
+        display: flex;
+    }
+
+    .bannerTalleres {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .bannerTalleresTexts {
+        padding: 30px 10px 30px 70px;
+
+    }
+
+    /* ----- Fin Banner talleres Servicios : Intermedio ----- */
+    
+}
+
+/* ------------------------------ Fin de CSS Servicios Intermedio ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Servicios Desktop ------------------------------ */
+
+@media screen and (min-width: 1200px) {
+
+    /* ----- Inicio infos Servicios : Desktop ----- */
+
+    .imgBannersSec__Serv {
+        background-position: left;
+    }
+
+    .info__servicios {
+        padding: 0px 200px;
+    }
+
+
+    .serv-contenedor {
+        grid-template-areas: 
+        "s1 s2 s3 s4 s5";
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        align-items: flex-end;
+        padding: 0px auto;
+
+    }
+
+    .servContenedorPri {
+        width: 230px;
+        height: 300px;
+    }
+
+    .servContenedorSec {
+        width: 150px;
+    }
+
+    .bannerTalleresTexts {
+        padding: 30px 10px 30px 100px;
+    }
+
+    .bannerTalleresImg {
+        background-position: right
+    }
+
+}
+
+/* ------------------------------ Fin de CSS Servicios Desktop ------------------------------ */
+
+

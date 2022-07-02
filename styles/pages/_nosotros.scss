@@ -1,0 +1,202 @@
+
+.imgBannersSec__Noso {
+    background-image: url(../../assets/2_nosotros/Banner-Secundario-Mobile-Nos.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ----- Fin banner secundario Nosotros : mobile ----- */
+
+/* ----- Inicio info Nosotros : mobile ----- */
+
+.infoNosotros__images img {
+    width: 300px;
+}
+
+.generalInfoNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+}
+
+.generalInfoNosotros__fullText {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    margin: 30px 0px;
+    text-align: left;
+}
+
+.generalInfoNosotros__fullText h2 {
+    color: var(--main-titleColor);
+}
+
+.generalInfoNosotros__fullText p {
+    color: var(--main-textColor);
+    line-height: 26px;
+}
+
+.Nosotros__certiLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.Nosotros__certiLogo img {
+    width: 100px;
+    padding-right: 10px;
+}
+
+.infoNosotros__images {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* ----- Fin info Nosotros : mobile ----- */
+
+/* ----- Inicio Pilares Nosotros : mobile ----- */
+
+.pilaresNoso {
+    background-color: $silverBck;
+}
+
+
+/* ----- Fin Pilares Nosotros : mobile ----- */
+
+/* ------------------------------ Inicio de CSS Nosotros Tablet Peq ------------------------------ */
+
+/* ----- Inicio info Nosotros : tablet peq ----- */
+
+@media screen and (min-width: 600px) {
+    
+
+    .generalInfoNosotros__fullText {
+        padding: 0px 70px;
+    }
+
+    .Nosotros__certiLogo img {
+        width: 120px;
+        padding-right: 10px;
+    }
+
+}
+
+
+/* ----- Fin Pilares Nosotros : tablet peq ----- */
+
+/* ------------------------------ Inicio de CSS Nosotros Tablet Gra ------------------------------ */
+
+
+@media screen and (min-width: 800px) {
+
+    /* ----- Inicio banner secundario Nosotros : tablet gra ----- */
+
+    .imgBannersSec__Noso {
+        background-image: url(../../assets/2_nosotros/banner-secundario.jpg);
+        background-size: cover;
+        background-position: -150px;
+        z-index: -1;
+    }
+
+    /* ----- Fin banner secundario Nosotros : tablet gra ----- */
+
+    
+
+    .generalInfoNosotros {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .generalInfoNosotros__fullText {
+        display: flex;
+        padding: 0px 30px;
+        width: 1fr;
+    }
+
+    .infoNosotros__images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    /* ----- Fin info Nosotros : tablet gra ----- */
+
+}
+
+/* ------------------------------ Fin de CSS Nosotros Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Intermedio Nosotros entre Tablet Gra & Desketop ------------------------------ */
+
+@media screen and (min-width: 957px) {
+
+    /* ----- Inicio banner secundario Nosotros : intermedio ----- */
+
+    .imgBannersSec__Noso {
+        background-position: -70px;
+    }
+
+    /* ----- Fin banner secundario Nosotros : intermedio ----- */
+
+    /* ----- Inicio info Nosotros : intermedio ----- */
+
+    .generalInfoNosotros{
+        margin: 0px 0px 30px 0px;
+    }
+
+    .generalInfoNosotros__fullText{
+        padding: 0px 0px 0px 60px;
+    }
+
+    /* ----- Fin info Nosotros : intermedio ----- */
+
+    /* ----- Inicio Pilares Nosotros : intermedio ----- */
+
+    .pilaresNoso {
+        margin: 0px;
+    }
+
+    /* ----- fin Pilares Nosotros : intermedio ----- */
+
+}
+
+/* ------------------------------ Fin de CSS Intermedio Nosotros entre Tablet Gra & Desketop ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Desktop Nosotros ------------------------------ */
+
+
+@media screen and (min-width: 1200px) {
+
+    /* ----- Inicio banner secundario Nosotros : desktop ----- */
+
+    .imgBannersSec__Noso {
+        background-position: -120px;
+    }
+    
+}
+
+/* ------------------------------ Fin de CSS Desktop Nosotros ------------------------------ */
+
+/* ------------------------------ Inicio de CSS >Desktop Nosotros ------------------------------ */
+
+@media screen and (min-width: 1400px) {
+    
+    /* ----- Inicio banner secundario Nosotros : < desktop ----- */
+
+    .imgBannersSec__Noso {
+        background-position: left;
+    }
+
+}
+
+/* ------------------------------ Fin de CSS >Desktop Nosotros ------------------------------ */
+
+

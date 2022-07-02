@@ -1,0 +1,111 @@
+.bannerSecPages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
+    padding-bottom: 40px;
+}
+
+.textSecBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+
+}
+
+.bannersec__fullText {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.bannersec__fullText--span {
+    line-height: 30px;
+    font-size: $textBanner;
+    color: $silverText;
+}
+
+.bannersec__fullText--h1 {
+    font-size: $tittleMobile;
+    color: $blackTitle;
+}
+
+/* ------------------------------ Inicio de CSS Contacto Tablet Peq ------------------------------ */
+
+@media screen and (min-width: 479px) {
+
+    .bannerSecPages {
+        grid-template-rows: 2.5fr 1fr;
+    }
+    
+}
+
+/* ------------------------------ Fin de CSS Contacto Tablet Peq ------------------------------ */
+
+/* ----- Inicio banner secundario Contacto: Tablet Peq ----- */
+
+@media screen and (min-width: 600px) {
+    
+    .bannerSecPages {
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+    }
+}
+
+/* ----- Fin banner secundario Contacto: Tablet Peq ----- */
+
+ /* ----- Inicio banner secundario Contacto : tablet Gra ----- */
+
+@media screen and (min-width: 676px) {
+
+
+   
+   
+    .bannerSecPages {
+       grid-template-rows: 4.5fr 1fr;
+   }
+}
+
+ /* ----- Inicio banner secundario Contacto : tablet Gra ----- */
+
+ /* ------------------------------ Inicio de CSS Contacto Tablet Gra ------------------------------ */
+
+
+@media screen and (min-width: 800px) {
+
+    .bannerSecPages {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 300px;
+        justify-content: left;
+        padding-bottom: 0px;
+        
+    }
+
+}
+
+  /* ----- Inicio banner secundario contacto : desktop ----- */
+
+
+@media screen and (min-width: 1200px) {
+    
+        .bannerSecPages {
+            height: 400px;
+        }
+    
+        .bannersec__fullText--h1 {
+            font-size: 55px;
+        }
+    
+        .bannersec__fullText--span {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    
+        .textSecBanner {
+            padding-right: 40px;
+        }
+    }
