@@ -1,23 +1,5 @@
 /* ----- Inicio form : mobile----- */
 
-.button-ppb{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 25px 10px 25px;
-    margin-top: 10px;
-    font-size: $textButtonL;
-    background-color: $yellowPp;
-    border: none;
-    border-radius: 30px;
-    text-align: left;
-    transition: all 0.5s;
-        &:hover {
-            font-weight: 600;
-            background-color: $yellowDark;
-            color: $white;
-        }
-}
-
 .formHome {
     display: grid;
     grid-template-rows: 0,5fr 1fr;
@@ -197,18 +179,15 @@
 .button-ppb{
     display: flex;
     flex-direction: row;
-    padding: 10px 25px 10px 25px;
-    margin-top: 10px;
-    font-size: 18px;
-    background-color: $yellowPp;
-    border: none;
-    border-radius: 30px;
-    text-align: left;
-    transition: all 0.5s;
+    padding: map-get($button, buttonPadd);
+    background-color: map-get($button, fillY);
+    border: map-get($button , borderFill);
+    @include buttonMix ($textButtonL, 30px, left, 10px);
+    transition: map-get($button, speed);
         &:hover {
             font-weight: 600;
-            background-color: $yellowDark;
-            color: $white;
+            background-color: map-get($button, fillDark);
+            color: map-get($button , texwhite);
         }
 }
 

@@ -64,18 +64,16 @@
 
 }
 
-.button-pp{
-    padding: 10px 25px 10px 25px;
-    font-size: $textButtonL;
-    background-color: $yellowPp;
-    border: none;
-    border-radius: 30px;
-    text-align: left;
+.button-pp {
+    padding: map-get($button, buttonPadd);
+    background-color: map-get($button, fillY);
+    border: map-get($button, borderFill);
+    @include buttonMix ($textButtonL, 30px, left, 0px);
     cursor: pointer;
-    transition: all 0.5s;
+    transition: map-get($button, speed);
     &:hover {
-        background-color: $yellowDark;
-        color: $white;
+        background-color: map-get($button, fillDark);
+        color: map-get($button, texwhite);
     }
 }
 

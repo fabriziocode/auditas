@@ -361,70 +361,6 @@ header nav ul a {
     margin: 50px 20px 50px 0px;
   }
 }
-.button-pp {
-  padding: 10px 25px 10px 25px;
-  font-size: 18px;
-  background-color: #f7b602;
-  border: none;
-  border-radius: 30px;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.button-pp:hover {
-  background-color: #d39b02;
-  color: #fff;
-}
-
-.button-ppb {
-  display: flex;
-  flex-direction: row;
-  padding: 10px 25px 10px 25px;
-  margin-top: 10px;
-  font-size: 18px;
-  background-color: #f7b602;
-  border: none;
-  border-radius: 30px;
-  text-align: left;
-  transition: all 0.5s;
-}
-.button-ppb:hover {
-  font-weight: 600;
-  background-color: #d39b02;
-  color: #fff;
-}
-
-.button-ppc {
-  padding: 10px 25px 10px 25px;
-  font-size: 14px;
-  background-color: #f7b602;
-  border: none;
-  border-radius: 30px;
-  text-align: left;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: all 0.5s;
-}
-.button-ppc:hover {
-  background-color: #d39b02;
-  color: #fff;
-}
-
-.button-ppd {
-  padding: 10px 25px 10px 25px;
-  margin-top: 10px;
-  font-size: 12px;
-  border: 1px solid #f7b602;
-  background-color: #fff;
-  border-radius: 30px;
-  text-align: left;
-  transition: all 0.5s;
-}
-.button-ppd:hover {
-  background-color: #f7b602;
-  color: #fff;
-}
-
 /* ----- Inicio contadores principal : mobile----- */
 #contadores {
   background-color: #f6f9fc;
@@ -607,24 +543,6 @@ header nav ul a {
   }
 }
 /* ----- Inicio form : mobile----- */
-.button-ppb {
-  display: flex;
-  flex-direction: row;
-  padding: 10px 25px 10px 25px;
-  margin-top: 10px;
-  font-size: 18px;
-  background-color: #f7b602;
-  border: none;
-  border-radius: 30px;
-  text-align: left;
-  transition: all 0.5s;
-}
-.button-ppb:hover {
-  font-weight: 600;
-  background-color: #d39b02;
-  color: #fff;
-}
-
 .formHome {
   display: grid;
   grid-template-rows: 0, 5fr 1fr;
@@ -783,13 +701,13 @@ header nav ul a {
 .button-ppb {
   display: flex;
   flex-direction: row;
-  padding: 10px 25px 10px 25px;
-  margin-top: 10px;
-  font-size: 18px;
+  padding: 10px 25px;
   background-color: #f7b602;
   border: none;
+  font-size: 18px;
   border-radius: 30px;
   text-align: left;
+  margin-top: 10px;
   transition: all 0.5s;
 }
 .button-ppb:hover {
@@ -1050,12 +968,13 @@ header nav ul a {
 }
 
 .button-pp {
-  padding: 10px 25px 10px 25px;
-  font-size: 18px;
+  padding: 10px 25px;
   background-color: #f7b602;
   border: none;
+  font-size: 18px;
   border-radius: 30px;
   text-align: left;
+  margin-top: 0px;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -1525,14 +1444,14 @@ header nav ul a {
 }
 
 .button-ppd {
-  padding: 10px 25px 10px 25px;
-  margin-top: 10px;
-  font-size: 12px;
+  padding: 10px 25px;
   border: 1px solid #f7b602;
   background-color: #fff;
+  transition: all 0.5s;
+  font-size: 12px;
   border-radius: 30px;
   text-align: left;
-  transition: all 0.5s;
+  margin-top: 10px;
 }
 .button-ppd:hover {
   background-color: #f7b602;
@@ -1552,14 +1471,14 @@ header nav ul a {
 }
 
 .button-ppc {
-  padding: 10px 25px 10px 25px;
-  font-size: 14px;
+  padding: 10px 25px;
   background-color: #f7b602;
   border: none;
+  font-size: 14px;
   border-radius: 30px;
   text-align: left;
-  cursor: pointer;
   margin-top: 10px;
+  cursor: pointer;
   transition: all 0.5s;
 }
 .button-ppc:hover {

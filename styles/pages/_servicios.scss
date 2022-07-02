@@ -111,17 +111,14 @@
 }
 
 .button-ppd{
-    padding: 10px 25px 10px 25px;
-    margin-top: 10px;
-    font-size: $textButtonXs;
-    border: 1px solid $yellowPp;
-    background-color: $white;
-    border-radius: 30px;
-    text-align: left;
-    transition: all 0.5s;
+    padding: map-get($button, buttonPadd);
+    border: map-get($button , borderOutline);
+    background-color: map-get($button, outline);
+    transition: map-get($button, speed);
+    @include buttonMix ($textButtonXs, 30px, left, 10px);
     &:hover {
-        background-color: $yellowPp;
-        color: $white;
+        background-color: map-get($button, fillY);
+        color: map-get($button, texwhite);
     }
 
 }
@@ -141,18 +138,15 @@
 }
 
 .button-ppc{
-    padding: 10px 25px 10px 25px;
-    font-size: $textButtonS;
-    background-color: $yellowPp;
-    border: none;
-    border-radius: 30px;
-    text-align: left;
+    padding: map-get($button, buttonPadd);
+    background-color: map-get($button, fillY);
+    border: map-get($button, borderFill);
+    @include buttonMix ($textButtonS, 30px, left, 10px);
     cursor: pointer;
-    margin-top: 10px;
-    transition: all 0.5s;
+    transition: map-get($button, speed);
     &:hover {
-        background-color: $yellowDark;
-        color: $white;
+        background-color: map-get($button, fillDark);
+        color: map-get($button, texwhite);
     }
 
 }
