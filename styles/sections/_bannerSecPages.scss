@@ -33,6 +33,16 @@
     color: $blackTitle;
 }
 
+%imgBannersSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* ------------------------------ Inicio de CSS Contacto Tablet Peq ------------------------------ */
 
 @media screen and (min-width: 479px) {

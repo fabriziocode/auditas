@@ -73,11 +73,10 @@
     text-align: left;
     cursor: pointer;
     transition: all 0.5s;
-}
-
-.button-pp:hover{
-    background-color: $yellowDark;
-    color: $white;
+    &:hover {
+        background-color: $yellowDark;
+        color: $white;
+    }
 }
 
 

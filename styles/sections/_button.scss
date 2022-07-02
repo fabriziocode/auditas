@@ -1,0 +1,92 @@
+$button: (
+    fill: $yelloPp,
+    fillDark: $yellowDark,
+    outline: $white,
+    Speed: 0.5s,
+    borderFill: none
+);
+
+
+//borderOutline: 1px solid,
+//buttonPadd: 10px 25px,
+
+
+
+.button-pp {
+    padding: 10px 25px 10px 25px;
+    font-size: $textButtonL;
+    background-color: $yellowPp;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+        background-color: $yellowDark;
+        color: $white;
+    }
+}
+
+
+
+//form
+
+.button-ppb{
+    display: flex;
+    flex-direction: row;
+    padding: map-get($button, buttonPadd);
+    margin-top: 10px;
+    font-size: $textButtonL;
+    background-color: $yellowPp;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    transition: all 0.5s;
+        &:hover {
+            font-weight: 600;
+            background-color: $yellowDark;
+            color: $white;
+        }
+}
+
+
+
+
+//servicios
+
+.button-ppc{
+    padding: map-get($button, buttonPadd);
+    font-size: $textButtonS;
+    background-color: $yellowPp;
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.5s;
+    &:hover {
+        background-color: $yellowDark;
+        color: $white;
+    }
+
+}
+
+.button-ppd{
+    padding: map-get($button, buttonPadd);
+    margin-top: 10px;
+    font-size: $textButtonXs;
+    border: 1px solid $yellowPp;
+    background-color: $white;
+    border-radius: 30px;
+    text-align: left;
+    transition: all 0.5s;
+    &:hover {
+        background-color: $yellowPp;
+        color: $white;
+    }
+
+}
+
+.gt {
+    color: blue;
+}

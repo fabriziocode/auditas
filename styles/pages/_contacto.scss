@@ -1,13 +1,7 @@
 
 .imgBannersSec {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     background-image: url(../../assets/5_contacto/Banner-Secundario-Mobile-cont.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %imgBannersSec;    
 }
 
 /* ----- Fin banner secundario contacto : mobile ----- */

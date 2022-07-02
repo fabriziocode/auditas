@@ -65,6 +65,10 @@ header nav ul a {
   height: 60px;
   display: flex;
   flex-direction: row;
+  transition: all 0.3s;
+}
+#header__menuOption--logo:active {
+  transform: scale(90%);
 }
 
 .iconoMenuMobile {
@@ -357,6 +361,70 @@ header nav ul a {
     margin: 50px 20px 50px 0px;
   }
 }
+.button-pp {
+  padding: 10px 25px 10px 25px;
+  font-size: 18px;
+  background-color: #f7b602;
+  border: none;
+  border-radius: 30px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button-pp:hover {
+  background-color: #d39b02;
+  color: #fff;
+}
+
+.button-ppb {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 25px 10px 25px;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: #f7b602;
+  border: none;
+  border-radius: 30px;
+  text-align: left;
+  transition: all 0.5s;
+}
+.button-ppb:hover {
+  font-weight: 600;
+  background-color: #d39b02;
+  color: #fff;
+}
+
+.button-ppc {
+  padding: 10px 25px 10px 25px;
+  font-size: 14px;
+  background-color: #f7b602;
+  border: none;
+  border-radius: 30px;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+.button-ppc:hover {
+  background-color: #d39b02;
+  color: #fff;
+}
+
+.button-ppd {
+  padding: 10px 25px 10px 25px;
+  margin-top: 10px;
+  font-size: 12px;
+  border: 1px solid #f7b602;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: left;
+  transition: all 0.5s;
+}
+.button-ppd:hover {
+  background-color: #f7b602;
+  color: #fff;
+}
+
 /* ----- Inicio contadores principal : mobile----- */
 #contadores {
   background-color: #f6f9fc;
@@ -858,6 +926,16 @@ header nav ul a {
   color: #1a1b2f;
 }
 
+.imgBannersSec, .imgBannersSec__Career, .imgBannersSec__Serv, .imgBannersSec__Noso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* ------------------------------ Inicio de CSS Contacto Tablet Peq ------------------------------ */
 @media screen and (min-width: 479px) {
   .bannerSecPages {
@@ -981,7 +1059,6 @@ header nav ul a {
   cursor: pointer;
   transition: all 0.5s;
 }
-
 .button-pp:hover {
   background-color: #d39b02;
   color: #fff;
@@ -1206,13 +1283,6 @@ header nav ul a {
 /* ------------------------------ Fin de CSS > Desktop ------------------------------ */
 .imgBannersSec__Noso {
   background-image: url(../../assets/2_nosotros/Banner-Secundario-Mobile-Nos.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* ----- Fin banner secundario Nosotros : mobile ----- */
@@ -1359,13 +1429,6 @@ header nav ul a {
 /* ----- Inicio banner secundario Servicios : mobile ----- */
 .imgBannersSec__Serv {
   background-image: url(../../assets/3_servicios/Banner-Secundario-Mobile--serv.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* ----- Fin banner secundario Servicios : mobile ----- */
@@ -1636,14 +1699,7 @@ header nav ul a {
 /* ------------------------------ Inicio de CSS Carrera Mobile ------------------------------ */
 /* ----- Inicio banner secundario Carrera : mobile ----- */
 .imgBannersSec__Career {
-  background-image: url(../../assets/4_carrera/Banner-Secundario-Mobile-Carrerag);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../../assets/4_carrera/Banner-Secundario-Mobile-Carrera.jpg);
 }
 
 .info__carrera {
@@ -1749,14 +1805,7 @@ header nav ul a {
   }
 }
 .imgBannersSec {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
   background-image: url(../../assets/5_contacto/Banner-Secundario-Mobile-cont.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* ----- Fin banner secundario contacto : mobile ----- */

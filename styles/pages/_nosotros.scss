@@ -1,13 +1,7 @@
 
 .imgBannersSec__Noso {
     background-image: url(../../assets/2_nosotros/Banner-Secundario-Mobile-Nos.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %imgBannersSec;
 }
 
 /* ----- Fin banner secundario Nosotros : mobile ----- */

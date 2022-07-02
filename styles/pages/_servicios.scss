@@ -2,13 +2,7 @@
 
 .imgBannersSec__Serv {
     background-image: url(../../assets/3_servicios/Banner-Secundario-Mobile--serv.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %imgBannersSec;
 }
 
 /* ----- Fin banner secundario Servicios : mobile ----- */
