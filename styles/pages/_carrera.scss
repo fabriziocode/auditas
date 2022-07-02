@@ -1,0 +1,146 @@
+/* ------------------------------ Inicio de CSS Carrera Mobile ------------------------------ */
+
+/* ----- Inicio banner secundario Carrera : mobile ----- */
+
+.imgBannersSec__Career {
+    background-image: url(../../assets/4_carrera/Banner-Secundario-Mobile-Carrerag);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info__carrera {
+    padding: 30px;
+}
+
+
+.pre-vacantesInfo {
+    padding: 30px;
+}
+
+.vacantesSection {
+    background-color: $silverBck;
+}
+
+.vacantesContenedores {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.vacantesContenedor__interno {
+    background-color: $white;
+    display: flex;
+    width: 220px;
+    height: 150px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 7px;
+    padding: 0px 40px;
+    transition: all 0.7s;
+}
+
+.vacantesContenedor__interno:hover{
+    transform: scale(110%);
+    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.13);
+        box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.13);
+
+}
+
+/* ------------------------------ Fin de CSS Carrera Mobile ------------------------------ */
+
+
+
+/* ------------------------------ Inicio de CSS Carrera Tablet Peq ------------------------------ */
+
+/* No fue necesario realizar reglas nuevas para esta brakpoint */
+
+/* ------------------------------ Fin de CSS Carrera Tablet Peq ------------------------------ */
+
+
+
+/* ------------------------------ Inicio de CSS Carrera Tablet Gra ------------------------------ */
+
+@media screen and (min-width: 800px) {
+
+    .imgBannersSec__Career {
+        background-image: url(../assets/4_carrera/banner-secundario-carrera.jpg);
+        z-index: -1;
+        background-position: -115px;
+    }
+
+    .info__carrera {
+        padding: 30px 70px;
+    }
+
+    .pre-vacantesInfo {
+        padding: 30px 70px;
+    }
+
+    .vacantesContenedores {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
+
+/* ------------------------------ Fin de CSS Carrera Tablet Gra ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Carrera Intermedio ------------------------------ */
+
+@media screen and (min-width: 950px) {
+    .imgBannersSec__Career {
+        background-position: left;
+    }
+
+    .vacantesContenedor__interno {
+        width: 300px;
+    }
+    
+}
+
+/* ------------------------------ Fin de CSS Carrera Intermedio ------------------------------ */
+
+/* ------------------------------ Inicio de CSS Carrera Desktop ------------------------------ */
+
+@media screen and (min-width: 1200px) {
+
+    .imgBannersSec__Career {
+        background-position: unset;
+    }
+
+    .info__carrera {
+        padding: 30px 200px;
+    }
+
+    .pre-vacantesInfo {
+        padding: 30px 200px;
+    }
+
+    .vacantesContenedores {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        padding: 0px 100px;
+        grid-column-gap: 15;
+    }
+
+    .vacantesContenedor__interno {
+        width: 250px;
+    }
+
+    
+
+}
+
+
+
+

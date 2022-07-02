@@ -99,13 +99,9 @@
     -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23); 
     box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.23);
     transition: all 0.7s;
-        &:hover {
-            transform: scale (110%);
-        }
-}
-
-.serPlans:hover {
-    transform: scale (110%);
+    &:hover {
+        transform: scale(110%);
+    }
 }
 
 
@@ -129,6 +125,10 @@
     border-radius: 30px;
     text-align: left;
     transition: all 0.5s;
+    &:hover {
+        background-color: $yellowPp;
+        color: $white;
+    }
 
 }
 
