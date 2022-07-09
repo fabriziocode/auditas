@@ -27,11 +27,11 @@
 }
 
 .generalInfoNosotros__fullText h2 {
-    color: var(--main-titleColor);
+    color: $blackTitle;
 }
 
 .generalInfoNosotros__fullText p {
-    color: var(--main-textColor);
+    color: $silverText;
     line-height: 26px;
 }
 

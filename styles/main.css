@@ -42,7 +42,6 @@ footer h3 {
   grid-template-rows: 72px;
   grid-column-gap: 10px;
   background-color: #fff;
-  /* padding: 0px 30px; */
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.13);
   z-index: 99;
 }
@@ -366,7 +365,6 @@ header nav ul a {
   background-color: #f6f9fc;
   width: auto;
   margin-bottom: 30px;
-  /* margin: 30px 0px; */
   padding: 60px 0px 20px 0px;
   z-index: 99;
 }
@@ -559,7 +557,7 @@ header nav ul a {
   vertical-align: middle;
   font-size: 16px;
   line-height: 1.8;
-  color: var(--main-textColor);
+  color: #425466;
   padding: 0px 30px;
 }
 .formHome__text p {
@@ -809,7 +807,7 @@ header nav ul a {
 /* ----- Fin pilares : intermedio -----*/
 /* ----- Inicio Pilares Nosotros : mobile ----- */
 .pilaresNoso {
-  background-color: var(--silver-backgroundColor);
+  background-color: #f6f9fc;
 }
 
 /* ----- Fin Pilares Nosotros : mobile ----- */
@@ -1189,14 +1187,6 @@ header nav ul a {
 
   /* ----- Fin banner principal : > desktop -----*/
   /* ----- Inicio banner secundario : > desktop ----- */
-  /* #banner-secundario {
-      height: 500px;
-      background-repeat: no-repeat;
-  } */
-  /* .imgBannerSec {
-
-      background-position-x: 0px;
-  } */
 }
 /* ----- Fin banner secundario : desktop -----*/
 /* ------------------------------ Fin de CSS > Desktop ------------------------------ */
@@ -1225,11 +1215,11 @@ header nav ul a {
 }
 
 .generalInfoNosotros__fullText h2 {
-  color: var(--main-titleColor);
+  color: #1a1b2f;
 }
 
 .generalInfoNosotros__fullText p {
-  color: var(--main-textColor);
+  color: #425466;
   line-height: 26px;
 }
 
