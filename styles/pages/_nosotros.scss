@@ -40,12 +40,13 @@
     flex-direction: row;
     justify-content: flex-start;
     padding-top: 20px;
+    img {
+        height: 50px;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
 }
 
-.Nosotros__certiLogo img {
-    width: 100px;
-    padding-right: 10px;
-}
 
 .infoNosotros__images {
     display: flex;
@@ -75,9 +76,12 @@
         padding: 0px 70px;
     }
 
-    .Nosotros__certiLogo img {
-        width: 120px;
-        padding-right: 10px;
+    .Nosotros__certiLogo {
+        img {
+            height: 50px;
+            padding-right: 10px;
+            margin-right: 20px;
+        }
     }
 
 }

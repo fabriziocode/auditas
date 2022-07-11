@@ -755,21 +755,27 @@ header nav ul a {
   font-size: 16px;
 }
 .pilar-1 img {
-  width: 180px;
+  height: 50px;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .pilar-2 {
   font-size: 16px;
 }
 .pilar-2 img {
-  width: 180px;
+  height: 50px;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .pilar-3 {
   font-size: 16px;
 }
 .pilar-3 img {
-  width: 180px;
+  height: 50px;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 /* ----- Fin pilares : mobile ----- */
@@ -795,6 +801,7 @@ header nav ul a {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: flex-start;
   }
 
   /* ----- Inicio Pilares Nosotros : intermedio ----- */
@@ -1229,10 +1236,10 @@ header nav ul a {
   justify-content: flex-start;
   padding-top: 20px;
 }
-
 .Nosotros__certiLogo img {
-  width: 100px;
+  height: 50px;
   padding-right: 10px;
+  margin-right: 20px;
 }
 
 .infoNosotros__images {
@@ -1255,8 +1262,9 @@ header nav ul a {
   }
 
   .Nosotros__certiLogo img {
-    width: 120px;
+    height: 50px;
     padding-right: 10px;
+    margin-right: 20px;
   }
 }
 /* ----- Fin Pilares Nosotros : tablet peq ----- */
@@ -1356,6 +1364,9 @@ header nav ul a {
   color: #425466;
   line-height: 26px;
 }
+.info__servicios h3 {
+  padding-top: 10px;
+}
 
 /* ----- Fin info Servicios : mobile ----- */
 .grad-plans {
@@ -1431,6 +1442,7 @@ header nav ul a {
 .servContenedorSec {
   width: 150px;
   height: 200px;
+  padding: 10px;
 }
 
 .button-ppd {
@@ -1477,10 +1489,15 @@ header nav ul a {
 }
 
 .bannerTalleresImg {
-  background-image: url(../../assets/3_servicios/Banner-talleres-Mobile.jpg);
+  background-image: url(../../assets/3_servicios/Banner-juntacentral-Mobile.png);
   background-size: cover;
   background-position: left;
   display: flex;
+}
+
+.servPlans__ContentA img, .servPlans__ContentB img {
+  width: 60px;
+  padding-bottom: 10px;
 }
 
 /* ----- Fin banner talleres : mobile ----- */
@@ -1549,7 +1566,7 @@ header nav ul a {
 @media screen and (min-width: 957px) {
   /* ----- Inicio Banner talleres Servicios : Intermedio ----- */
   .bannerTalleresImg {
-    background-image: url(../../assets/3_servicios/banner-secundario-servicios-2.jpg);
+    background-image: url(../../assets/3_servicios/banner-secundario-servicios-2_2.png);
     background-size: cover;
     background-position: 602px;
     display: flex;

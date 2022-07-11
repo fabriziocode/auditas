@@ -22,7 +22,11 @@
             color: $silverText;
             line-height: 26px;
         }
+        h3 {
+            padding-top: 10px;
+        }
 }
+
 
 /* ----- Fin info Servicios : mobile ----- */
 
@@ -108,6 +112,7 @@
 .servContenedorSec {
     width: 150px;
     height: 200px;
+    padding: 10px;
 }
 
 .button-ppd{
@@ -152,10 +157,17 @@
 }
 
 .bannerTalleresImg {
-    background-image: url(../../assets/3_servicios/Banner-talleres-Mobile.jpg);
+    background-image: url(../../assets/3_servicios/Banner-juntacentral-Mobile.png);
     background-size: cover;
     background-position: left;
     display: flex;
+}
+
+.servPlans__ContentA, .servPlans__ContentB {
+    img {
+        width: 60px;
+        padding-bottom: 10px;
+    }
 }
 
 /* ----- Fin banner talleres : mobile ----- */
@@ -251,7 +263,7 @@
     /* ----- Inicio Banner talleres Servicios : Intermedio ----- */
 
     .bannerTalleresImg {
-        background-image: url(../../assets/3_servicios/banner-secundario-servicios-2.jpg);
+        background-image: url(../../assets/3_servicios/banner-secundario-servicios-2_2.png);
         background-size: cover;
         background-position: 602px;
         display: flex;
