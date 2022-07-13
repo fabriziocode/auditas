@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-image: url(../../assets/1_home/Banner-principal-mobile-auditas-consulting.jpg);
+    background-image: url("../../assets/1_home/Banner-principal-mobile-auditas-consulting.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -135,7 +135,7 @@
     }
 
     .backBannerPP {
-        background-image: url(../../assets/1_home/Banner-Principal-tablet-1.jpg);
+        background-image: url("../../assets/1_home/Banner-Principal-tablet-1.jpg");
         background-position-y: -80px;
     }
 
@@ -200,7 +200,7 @@
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        background-image: url(../../assets/1_home/Banner-Principal.png);
+        background-image: url("../../assets/1_home/Banner-Principal.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -272,7 +272,7 @@
     
     .imgBannerSecB {
         display: flex;
-        background-image: url(../../assets/1_home/prueba-1.png);
+        background-image: url("../../assets/1_home/prueba-1.png");
         background-size: cover;
         justify-content: left;
         order: 1;
