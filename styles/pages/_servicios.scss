@@ -1,7 +1,7 @@
 /* ----- Inicio banner secundario Servicios : mobile ----- */
 
 .imgBannersSec__Serv {
-    background-image: url(../../assets/3_servicios/Banner-Secundario-Mobile--serv.jpg);
+    background-image: url(../../assets/3_servicios/BannerSecMob-serv.jpg);
     @extend %imgBannersSec;
 }
 
@@ -223,7 +223,7 @@
     /* ----- Inicio Banner Talleres Servicios : Tablet Gra ----- */
 
     .imgBannersSec__Serv {
-        background-image: url(../../assets/3_servicios/banner-secundario-servicios.jpg);
+        background-image: url(../../assets/3_servicios/bannerSec-ser.jpg);
         z-index: -1;
         background-position: -40px;
     }
