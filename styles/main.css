@@ -169,40 +169,31 @@ header nav ul a {
   .menuList li a {
     color: #1a1b2f;
   }
-
   .iconoMenuMobile {
     display: flex;
     flex-direction: row;
   }
-
   .iconMenuMobileim {
     display: none;
   }
-
   .checkboxMenuMobile {
     display: none;
   }
-
   #menuHambu:checked ~ .menuList {
     height: 0vh;
   }
-
   #menuHambu:checked ~ .menuList li {
     display: flex;
   }
-
   .logoLinkedIn:hover {
     transform: scale(120%);
   }
-
   .menuList li:hover {
     color: #f7b602;
   }
-
   .logoLinkedIn {
     transition: all 1.3s;
   }
-
   .logoLinkedIn:hover {
     transform: scale(120%);
   }
@@ -302,18 +293,15 @@ header nav ul a {
   .footer-items--col1 {
     margin-bottom: 0px;
   }
-
   .footer-items--col2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-
   .form-containerContacto {
     padding: 30px;
   }
-
   .form-containerContacto {
     margin: 10px 70px;
   }
@@ -325,19 +313,15 @@ header nav ul a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-
   .logoFooterAud {
     align-items: flex-start;
   }
-
   .footer-items--col1 {
     display: block;
   }
-
   .footer-items--col2 {
     order: 2;
   }
-
   .footerWithHr {
     grid-template-areas: "hr hr" "logoFoo fooCol1" "fooCol2 fooCol2";
     grid-template-columns: 1fr 1fr;
@@ -426,7 +410,6 @@ header nav ul a {
   #contadores {
     z-index: 10;
   }
-
   #contadores__items {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -447,7 +430,6 @@ header nav ul a {
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
-
   .contador-1, .contador-2, .contador-3 {
     display: flex;
     flex-direction: row;
@@ -605,7 +587,6 @@ header nav ul a {
   .formHome__text {
     padding: 0px 70px;
   }
-
   .form-container {
     margin: 10px 70px;
   }
@@ -616,7 +597,6 @@ header nav ul a {
   .formHome__text {
     padding: 0px 200px;
   }
-
   .form-container {
     margin: 10px 200px;
   }
@@ -629,11 +609,9 @@ header nav ul a {
     grid-template-rows: 1fr;
     padding: 80px 60px;
   }
-
   .formHome__text {
     padding: 0px 10px 0px 40px;
   }
-
   .form-container {
     margin: 10px 40px;
     padding: 40px;
@@ -720,7 +698,6 @@ header nav ul a {
   .form-containerContacto {
     padding: 30px;
   }
-
   .form-containerContacto {
     margin: 10px 200px;
   }
@@ -731,7 +708,6 @@ header nav ul a {
   .form-containerContacto {
     padding: 40px;
   }
-
   .form-containerContacto {
     margin: 10px 300px;
   }
@@ -795,7 +771,6 @@ header nav ul a {
     padding: 40px 30px 40px 65px;
     margin: 50px 0px;
   }
-
   .pilar-1, .pilar-2, .pilar-3 {
     display: flex;
     flex-direction: column;
@@ -803,12 +778,10 @@ header nav ul a {
     align-content: center;
     align-items: flex-start;
   }
-
   /* ----- Inicio Pilares Nosotros : intermedio ----- */
   .pilaresNoso {
     margin: 0px;
   }
-
   /* ----- fin Pilares Nosotros : intermedio ----- */
 }
 /* ----- Fin pilares : intermedio -----*/
@@ -896,16 +869,13 @@ header nav ul a {
   .bannerSecPages {
     height: 400px;
   }
-
   .bannersec__fullText--h1 {
     font-size: 55px;
   }
-
   .bannersec__fullText--span {
     font-size: 30px;
     line-height: 40px;
   }
-
   .textSecBanner {
     padding-right: 40px;
   }
@@ -1029,12 +999,10 @@ header nav ul a {
   .bannerpp {
     grid-template-rows: 2fr 1fr;
   }
-
   .backBannerPP {
     background-image: url(../../assets/1_home/Banner-Principal-tablet-1.jpg);
     background-position-y: -80px;
   }
-
   /* ----- Fin banner principal : tablet peq ----- */
   /* ----- Inicio banner secundario : tablet peq ----- */
   #banner-secundario {
@@ -1045,7 +1013,6 @@ header nav ul a {
     width: 100%;
     z-index: 95;
   }
-
   .banner-secundario__text {
     display: flex;
     flex-direction: column;
@@ -1057,7 +1024,6 @@ header nav ul a {
     color: #425466;
     padding: 0px 70px;
   }
-
   .imgBannerSec {
     display: flex;
     width: 100%;
@@ -1076,7 +1042,6 @@ header nav ul a {
     height: 350px;
     padding-bottom: 0px;
   }
-
   .backBannerPP {
     display: flex;
     flex-direction: row;
@@ -1091,14 +1056,12 @@ header nav ul a {
     /* Profe se que en clase hablamos de que esto no es muy recomendable (order) hacerlo, pero la razón es que en mobile el orden lo necesitaba primero la imagen y despues el texto, en este caso lo necesito primero el texto y despues la imagen, entonces por eso utilice order */
     z-index: -1;
   }
-
   .bannerpp__fullTextA {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 30px;
   }
-
   /* ----- Fin banner principal : tablet gra ----- */
   /* ----- Inicio banner secundario : tablet gra ----- */
   #banner-secundario {
@@ -1108,7 +1071,6 @@ header nav ul a {
     width: 100%;
     z-index: 93;
   }
-
   .banner-secundario__text {
     display: flex;
     flex-direction: column;
@@ -1120,7 +1082,6 @@ header nav ul a {
     color: #425466;
     padding: 0px 70px;
   }
-
   .imgBannerSec {
     display: flex;
     width: 100%;
@@ -1133,13 +1094,11 @@ header nav ul a {
   .imgBannerSec {
     display: none;
   }
-
   #banner-secundario {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     height: 500px;
   }
-
   .imgBannerSecB {
     display: flex;
     background-image: url("../../assets/1_home/prueba-1.png");
@@ -1147,11 +1106,9 @@ header nav ul a {
     justify-content: left;
     order: 1;
   }
-
   .banner-secundario__text {
     order: 2;
   }
-
   /* ----- Fin banner secundario : intermedio -----*/
 }
 /* ------------------------------ Fin de CSS Intermedio entre Tablet Gra & Desketop ------------------------------ */
@@ -1162,20 +1119,16 @@ header nav ul a {
     height: 610px;
     grid-template-columns: 1fr 1.2fr;
   }
-
   .backBannerPP {
     background-position: -545px;
   }
-
   .bannerpp__fullText--h1 {
     font-size: 55px;
   }
-
   .bannerpp__fullText--span {
     font-size: 30px;
     line-height: 1.3;
   }
-
   /* ----- Fin banner principal : desktop -----*/
 }
 /* ------------------------------ Fin de CSS Desketop ------------------------------ */
@@ -1186,19 +1139,17 @@ header nav ul a {
     height: 580px;
     grid-template-columns: 1fr 1.5fr;
   }
-
   .backBannerPP {
     background-position: right;
     background-size: auto 100%;
   }
-
   /* ----- Fin banner principal : > desktop -----*/
   /* ----- Inicio banner secundario : > desktop ----- */
 }
 /* ----- Fin banner secundario : desktop -----*/
 /* ------------------------------ Fin de CSS > Desktop ------------------------------ */
 .imgBannersSec__Noso {
-  background-image: url(../../assets/2_nosotros/Banner-Secundario-Mobile-Nos.jpg);
+  background-image: url(../../assets/2_nosotros/bannerSecMob-Nos.jpg);
 }
 
 /* ----- Fin banner secundario Nosotros : mobile ----- */
@@ -1260,7 +1211,6 @@ header nav ul a {
   .generalInfoNosotros__fullText {
     padding: 0px 70px;
   }
-
   .Nosotros__certiLogo img {
     height: 50px;
     padding-right: 10px;
@@ -1272,32 +1222,28 @@ header nav ul a {
 @media screen and (min-width: 800px) {
   /* ----- Inicio banner secundario Nosotros : tablet gra ----- */
   .imgBannersSec__Noso {
-    background-image: url(../../assets/2_nosotros/banner-secundario.jpg);
+    background-image: url(../../assets/2_nosotros/bannerSecNos.jpg);
     background-size: cover;
     background-position: -150px;
     z-index: -1;
   }
-
   /* ----- Fin banner secundario Nosotros : tablet gra ----- */
   .generalInfoNosotros {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
   }
-
   .generalInfoNosotros__fullText {
     display: flex;
     padding: 0px 30px;
     width: 1fr;
   }
-
   .infoNosotros__images {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
   }
-
   /* ----- Fin info Nosotros : tablet gra ----- */
 }
 /* ------------------------------ Fin de CSS Nosotros Tablet Gra ------------------------------ */
@@ -1307,23 +1253,19 @@ header nav ul a {
   .imgBannersSec__Noso {
     background-position: -70px;
   }
-
   /* ----- Fin banner secundario Nosotros : intermedio ----- */
   /* ----- Inicio info Nosotros : intermedio ----- */
   .generalInfoNosotros {
     margin: 0px 0px 30px 0px;
   }
-
   .generalInfoNosotros__fullText {
     padding: 0px 0px 0px 60px;
   }
-
   /* ----- Fin info Nosotros : intermedio ----- */
   /* ----- Inicio Pilares Nosotros : intermedio ----- */
   .pilaresNoso {
     margin: 0px;
   }
-
   /* ----- fin Pilares Nosotros : intermedio ----- */
 }
 /* ------------------------------ Fin de CSS Intermedio Nosotros entre Tablet Gra & Desketop ------------------------------ */
@@ -1345,7 +1287,7 @@ header nav ul a {
 /* ------------------------------ Fin de CSS >Desktop Nosotros ------------------------------ */
 /* ----- Inicio banner secundario Servicios : mobile ----- */
 .imgBannersSec__Serv {
-  background-image: url(../../assets/3_servicios/Banner-Secundario-Mobile--serv.jpg);
+  background-image: url(../../assets/3_servicios/BannerSecMob-serv.jpg);
 }
 
 /* ----- Fin banner secundario Servicios : mobile ----- */
@@ -1508,27 +1450,22 @@ header nav ul a {
   .info__servicios {
     padding: 0px 70px;
   }
-
   /* ----- Fin Info Servicios : Tablet Peq ----- */
   /* ----- Inicio Planes Servicios : Tablet Peq ----- */
   .servContenedorPri {
     width: 350px;
   }
-
   .servContenedorSec {
     width: 250px;
   }
-
   /* ----- Fin Planes Servicios : Tablet Peq ----- */
   /* ----- Inicio Banner Talleres Servicios : Tablet Peq ----- */
   .bannerTalleres {
     grid-template-rows: 1fr 1.5fr;
   }
-
   .bannerTalleresTexts {
     padding: 0px 70px 20px 70px;
   }
-
   /* ----- Fin Banner Talleres Servicios : Tablet Peq ----- */
 }
 /* ------------------------------ Fin de CSS Servicios Tablet Peq ------------------------------ */
@@ -1536,21 +1473,18 @@ header nav ul a {
 @media screen and (min-width: 800px) {
   /* ----- Inicio Banner Talleres Servicios : Tablet Gra ----- */
   .imgBannersSec__Serv {
-    background-image: url(../../assets/3_servicios/banner-secundario-servicios.jpg);
+    background-image: url(../../assets/3_servicios/bannerSec-ser.jpg);
     z-index: -1;
     background-position: -40px;
   }
-
   /* ----- Fin Banner Talleres Servicios : Tablet Gra ----- */
   /* ----- Inicio Planes Servicios : Tablet Gra ----- */
   .servContenedorPri {
     width: 400px;
   }
-
   .servContenedorSec {
     width: 325px;
   }
-
   /* ----- Fin Planes Servicios : Tablet Gra ----- */
   /* ----- Inicio Banner talleres Servicios : Tablet Gra ----- */
   .bannerTalleres {
@@ -1558,7 +1492,6 @@ header nav ul a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
   }
-
   /* ----- Fin Banner talleres Servicios : Tablet Gra ----- */
 }
 /* ------------------------------ Fin de CSS Servicios Tablet Gra ------------------------------ */
@@ -1571,17 +1504,14 @@ header nav ul a {
     background-position: 602px;
     display: flex;
   }
-
   .bannerTalleres {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
   .bannerTalleresTexts {
     padding: 30px 10px 30px 70px;
   }
-
   /* ----- Fin Banner talleres Servicios : Intermedio ----- */
 }
 /* ------------------------------ Fin de CSS Servicios Intermedio ------------------------------ */
@@ -1591,11 +1521,9 @@ header nav ul a {
   .imgBannersSec__Serv {
     background-position: left;
   }
-
   .info__servicios {
     padding: 0px 200px;
   }
-
   .serv-contenedor {
     grid-template-areas: "s1 s2 s3 s4 s5";
     grid-template-columns: repeat(5, 1fr);
@@ -1603,20 +1531,16 @@ header nav ul a {
     align-items: flex-end;
     padding: 0px auto;
   }
-
   .servContenedorPri {
     width: 230px;
     height: 300px;
   }
-
   .servContenedorSec {
     width: 150px;
   }
-
   .bannerTalleresTexts {
     padding: 30px 10px 30px 100px;
   }
-
   .bannerTalleresImg {
     background-position: right;
   }
@@ -1679,15 +1603,12 @@ header nav ul a {
     z-index: -1;
     background-position: -115px;
   }
-
   .info__carrera {
     padding: 30px 70px;
   }
-
   .pre-vacantesInfo {
     padding: 30px 70px;
   }
-
   .vacantesContenedores {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1699,7 +1620,6 @@ header nav ul a {
   .imgBannersSec__Career {
     background-position: left;
   }
-
   .vacantesContenedor__interno {
     width: 300px;
   }
@@ -1710,22 +1630,18 @@ header nav ul a {
   .imgBannersSec__Career {
     background-position: unset;
   }
-
   .info__carrera {
     padding: 30px 200px;
   }
-
   .pre-vacantesInfo {
     padding: 30px 200px;
   }
-
   .vacantesContenedores {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     padding: 0px 100px;
     grid-column-gap: 15;
   }
-
   .vacantesContenedor__interno {
     width: 250px;
   }
@@ -1767,13 +1683,11 @@ header nav ul a {
     display: grid;
     grid-template-rows: 3fr 1fr;
   }
-
   /* ----- Fin banner secundario Contacto: Tablet Peq ----- */
   /* ----- Inicio info Contacto: Tablet Peq ----- */
   .infoContacto {
     padding: 0px 70px;
   }
-
   /* ----- Fin info Contacto: Tablet Peq ----- */
 }
 @media screen and (min-width: 676px) {
@@ -1781,7 +1695,6 @@ header nav ul a {
   .bannerSecPages {
     grid-template-rows: 4.5fr 1fr;
   }
-
   .imgBannerSec {
     background-image: url(../../assets/5_contacto/Banner-Secundario-Tablet.jpg);
   }
@@ -1796,7 +1709,6 @@ header nav ul a {
     justify-content: left;
     padding-bottom: 0px;
   }
-
   .imgBannersSec {
     background-image: url(../assets/5_contacto/banner-secundario-contacto-desk.jpg);
     background-size: cover;
@@ -1811,25 +1723,20 @@ header nav ul a {
   .bannerSecPages {
     height: 400px;
   }
-
   .bannersec__fullText--h1 {
     font-size: 55px;
   }
-
   .bannersec__fullText--span {
     font-size: 30px;
     line-height: 40px;
   }
-
   .textSecBanner {
     padding-right: 40px;
   }
-
   /* ----- Fin banner secundario contacto : desktop -----*/
   /* ----- Inicio info contacto : desktop ----- */
   .infoContacto {
     padding: 0px 200px;
   }
-
   /* ----- Fin info contacto : desktop -----*/
 }/*# sourceMappingURL=main.css.map */
