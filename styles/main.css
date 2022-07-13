@@ -1101,7 +1101,7 @@ header nav ul a {
   }
   .imgBannerSecB {
     display: flex;
-    background-image: url("../../assets/1_home/prueba-1.png");
+    background-image: url(../../assets/1_home/prueba-1.png);
     background-size: cover;
     justify-content: left;
     order: 1;
