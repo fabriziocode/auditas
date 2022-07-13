@@ -1287,7 +1287,7 @@ header nav ul a {
 /* ------------------------------ Fin de CSS >Desktop Nosotros ------------------------------ */
 /* ----- Inicio banner secundario Servicios : mobile ----- */
 .imgBannersSec__Serv {
-  background-image: url(../../assets/3_servicios/BannerSecMob-serv.jpg);
+  background-image: url("../../assets/3_servicios/BannerSecMob-serv.jpg");
 }
 
 /* ----- Fin banner secundario Servicios : mobile ----- */
@@ -1431,7 +1431,7 @@ header nav ul a {
 }
 
 .bannerTalleresImg {
-  background-image: url(../../assets/3_servicios/Banner-juntacentral-Mobile.png);
+  background-image: url("../../assets/3_servicios/Banner-juntacentral-Mobile.png");
   background-size: cover;
   background-position: left;
   display: flex;
@@ -1473,7 +1473,7 @@ header nav ul a {
 @media screen and (min-width: 800px) {
   /* ----- Inicio Banner Talleres Servicios : Tablet Gra ----- */
   .imgBannersSec__Serv {
-    background-image: url(../../assets/3_servicios/bannerSec-ser.jpg);
+    background-image: url("../../assets/3_servicios/bannerSec-ser.jpg");
     z-index: -1;
     background-position: -40px;
   }
@@ -1499,7 +1499,7 @@ header nav ul a {
 @media screen and (min-width: 957px) {
   /* ----- Inicio Banner talleres Servicios : Intermedio ----- */
   .bannerTalleresImg {
-    background-image: url(../../assets/3_servicios/banner-secundario-servicios-2_2.png);
+    background-image: url("../../assets/3_servicios/banner-secundario-servicios-2_2.png");
     background-size: cover;
     background-position: 602px;
     display: flex;
