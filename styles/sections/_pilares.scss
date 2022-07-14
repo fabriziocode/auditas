@@ -41,6 +41,13 @@
         }
 }
 
+.pilar-1, .pilar-2, .pilar-3 {
+    transition: all 0.7s;
+    &:hover {
+        transform: scale(105%);
+    }
+}
+
 /* ----- Fin pilares : mobile ----- */
 
 /* ----- Inicio pilares : tablet peq ----- */

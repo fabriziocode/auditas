@@ -29,6 +29,7 @@
     align-content: center;
     align-items: center;
     justify-items: center;
+    padding-bottom: 70px;
 }
 
 .vacantesContenedor__interno {
@@ -83,6 +84,7 @@
     .vacantesContenedores {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        padding-bottom: 70px;
     }
 
 }
@@ -125,6 +127,7 @@
         grid-template-rows: 1fr;
         padding: 0px 100px;
         grid-column-gap: 15;
+        padding-bottom: 70px;
     }
 
     .vacantesContenedor__interno {
