@@ -1,6 +1,6 @@
 
 .imgBannersSec {
-    background-image: url(../../assets/5_contacto/Banner-Secundario-Mobile-cont.jpg);
+    background-image: url("../assets/5_contacto/Banner-Secundario-Mobile-cont.jpg");
     @extend %imgBannersSec;    
 }
 
@@ -74,9 +74,8 @@
     }
 
     .imgBannerSec {
-        background-image: url(../../assets/5_contacto/Banner-Secundario-Tablet.jpg); 
+        background-image: url("../assets/5_contacto/Banner-Secundario-Tablet.jpg"); 
     }
-    
 }
 
 /* ------------------------------ Fin de CSS Contacto Tablet Peq ------------------------------ */
@@ -97,11 +96,14 @@
     }
 
     .imgBannersSec {
-        background-image: url(../assets/5_contacto/banner-secundario-contacto-desk.jpg);
+        background-image: url("../assets/5_contacto/banner-secundario-contacto-desk.jpg");
         background-size: cover;
         background-position: left;
         z-index: -1;
 
+    }
+    .gt{
+        background-color: #fff;
     }
 
 }

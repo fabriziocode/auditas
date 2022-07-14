@@ -3,7 +3,7 @@
 /* ----- Inicio banner secundario Carrera : mobile ----- */
 
 .imgBannersSec__Career {
-    background-image: url(../../assets/4_carrera/Banner-Secundario-Mobile-Carrera.jpg);
+    background-image: url("../assets/4_carrera/Banner-Secundario-Mobile-Carrera.jpg");
     @extend %imgBannersSec;
 }
 
@@ -67,7 +67,7 @@
 @media screen and (min-width: 800px) {
 
     .imgBannersSec__Career {
-        background-image: url(../assets/4_carrera/banner-secundario-carrera.jpg);
+        background-image: url("../assets/4_carrera/banner-secundario-carrera.jpg");
         z-index: -1;
         background-position: -115px;
     }
