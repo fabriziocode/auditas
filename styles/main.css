@@ -1000,7 +1000,7 @@ header nav ul a {
     grid-template-rows: 2fr 1fr;
   }
   .backBannerPP {
-    background-image: url("../../assets/1_home/Banner-Principal-tablet-1.jpg");
+    background-image: url("../assets/1_home/Banner-Principal-tablet-1.jpg");
     background-position-y: -80px;
   }
   /* ----- Fin banner principal : tablet peq ----- */
@@ -1047,7 +1047,7 @@ header nav ul a {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    background-image: url("../../assets/1_home/Banner-Principal.png");
+    background-image: url("../assets/1_home/Banner-Principal.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1101,7 +1101,7 @@ header nav ul a {
   }
   .imgBannerSecB {
     display: flex;
-    background-image: url("../../assets/1_home/prueba-1.png");
+    background-image: url("../assets/1_home/prueba-1.png");
     background-size: cover;
     justify-content: left;
     order: 1;
@@ -1149,7 +1149,7 @@ header nav ul a {
 /* ----- Fin banner secundario : desktop -----*/
 /* ------------------------------ Fin de CSS > Desktop ------------------------------ */
 .imgBannersSec__Noso {
-  background-image: url("../../assets/2_nosotros/bannerSecMob-Nos.jpg");
+  background-image: url("../assets/2_nosotros/bannerSecMob-Nos.jpg");
 }
 
 /* ----- Fin banner secundario Nosotros : mobile ----- */
@@ -1222,7 +1222,7 @@ header nav ul a {
 @media screen and (min-width: 800px) {
   /* ----- Inicio banner secundario Nosotros : tablet gra ----- */
   .imgBannersSec__Noso {
-    background-image: url("../../assets/2_nosotros/bannerSecNos.jpg");
+    background-image: url("../assets/2_nosotros/bannerSecNos.jpg");
     background-size: cover;
     background-position: -150px;
     z-index: -1;
@@ -1287,7 +1287,7 @@ header nav ul a {
 /* ------------------------------ Fin de CSS >Desktop Nosotros ------------------------------ */
 /* ----- Inicio banner secundario Servicios : mobile ----- */
 .imgBannersSec__Serv {
-  background-image: url("../../assets/3_servicios/BannerSecMob-serv.jpg");
+  background-image: url("../assets/3_servicios/BannerSecMob-serv.jpg");
 }
 
 /* ----- Fin banner secundario Servicios : mobile ----- */
@@ -1431,7 +1431,7 @@ header nav ul a {
 }
 
 .bannerTalleresImg {
-  background-image: url("../../assets/3_servicios/Banner-juntacentral-Mobile.png");
+  background-image: url("../assets/3_servicios/Banner-juntacentral-Mobile.png");
   background-size: cover;
   background-position: left;
   display: flex;
@@ -1473,7 +1473,7 @@ header nav ul a {
 @media screen and (min-width: 800px) {
   /* ----- Inicio Banner Talleres Servicios : Tablet Gra ----- */
   .imgBannersSec__Serv {
-    background-image: url("../../assets/3_servicios/bannerSec-ser.jpg");
+    background-image: url("../assets/3_servicios/bannerSec-ser.jpg");
     z-index: -1;
     background-position: -40px;
   }
@@ -1499,7 +1499,7 @@ header nav ul a {
 @media screen and (min-width: 957px) {
   /* ----- Inicio Banner talleres Servicios : Intermedio ----- */
   .bannerTalleresImg {
-    background-image: url("../../assets/3_servicios/banner-secundario-servicios-2_2.png");
+    background-image: url("../assets/3_servicios/banner-secundario-servicios-2_2.png");
     background-size: cover;
     background-position: 602px;
     display: flex;
@@ -1549,7 +1549,7 @@ header nav ul a {
 /* ------------------------------ Inicio de CSS Carrera Mobile ------------------------------ */
 /* ----- Inicio banner secundario Carrera : mobile ----- */
 .imgBannersSec__Career {
-  background-image: url("../../assets/4_carrera/Banner-Secundario-Mobile-Carrera.jpg");
+  background-image: url("../assets/4_carrera/Banner-Secundario-Mobile-Carrera.jpg");
 }
 
 .info__carrera {
@@ -1599,7 +1599,7 @@ header nav ul a {
 /* ------------------------------ Inicio de CSS Carrera Tablet Gra ------------------------------ */
 @media screen and (min-width: 800px) {
   .imgBannersSec__Career {
-    background-image: url("../../assets/4_carrera/banner-secundario-carrera.jpg");
+    background-image: url("../assets/4_carrera/banner-secundario-carrera.jpg");
     z-index: -1;
     background-position: -115px;
   }
@@ -1647,7 +1647,7 @@ header nav ul a {
   }
 }
 .imgBannersSec {
-  background-image: url("../../assets/5_contacto/Banner-Secundario-Mobile-cont.jpg");
+  background-image: url("../assets/5_contacto/Banner-Secundario-Mobile-cont.jpg");
 }
 
 /* ----- Fin banner secundario contacto : mobile ----- */
@@ -1696,7 +1696,7 @@ header nav ul a {
     grid-template-rows: 4.5fr 1fr;
   }
   .imgBannerSec {
-    background-image: url("../../assets/5_contacto/Banner-Secundario-Tablet.jpg");
+    background-image: url("../assets/5_contacto/Banner-Secundario-Tablet.jpg");
   }
 }
 /* ------------------------------ Fin de CSS Contacto Tablet Peq ------------------------------ */
@@ -1710,12 +1710,12 @@ header nav ul a {
     padding-bottom: 0px;
   }
   .imgBannersSec {
-    background-image: url("../../assets/5_contacto/banner-secundario-contacto-desk.jpg");
+    background-image: url("../assets/5_contacto/banner-secundario-contacto-desk.jpg");
     background-size: cover;
     background-position: left;
     z-index: -1;
   }
-  .gt {
+  .gtc {
     background-color: #fff;
   }
 }
