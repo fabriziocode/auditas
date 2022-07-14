@@ -1,6 +1,6 @@
 
 .imgBannersSec__Noso {
-    background-image: url(../../assets/2_nosotros/bannerSecMob-Nos.jpg);
+    background-image: url("../../assets/2_nosotros/bannerSecMob-Nos.jpg");
     @extend %imgBannersSec;
 }
 
@@ -97,7 +97,7 @@
     /* ----- Inicio banner secundario Nosotros : tablet gra ----- */
 
     .imgBannersSec__Noso {
-        background-image: url(../../assets/2_nosotros/bannerSecNos.jpg);
+        background-image: url("../../assets/2_nosotros/bannerSecNos.jpg");
         background-size: cover;
         background-position: -150px;
         z-index: -1;
