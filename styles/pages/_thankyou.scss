@@ -1,0 +1,26 @@
+
+.imgBannersSec_thank {
+    background-image: url("../assets/6_thankyou/bannersecmob-thankyou.jpg");
+    @extend %imgBannersSec;    
+}
+
+@media screen and (min-width: 800px) {
+
+    .bannerSecPages {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 300px;
+        justify-content: left;
+        padding-bottom: 0px;
+        
+    }
+
+    .imgBannersSec_thank {
+        background-image: url("../assets/6_thankyou/bannersec-thankyou.jpg");
+        background-size: cover;
+        background-position: left;
+        z-index: -1;
+
+    }
+
+}

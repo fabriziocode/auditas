@@ -210,11 +210,22 @@ header nav ul a {
 .footer {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: #f6f9fc;
+  background-color: #1a1b2f;
   padding: 40px 30px;
 }
 .footer a {
   font-size: 14px;
+  color: #fff;
+}
+.footer h3 {
+  color: #fff;
+}
+
+.footerWithHr a {
+  color: #fff;
+}
+.footerWithHr h3 {
+  color: #fff;
 }
 
 .footer-items {
@@ -264,7 +275,7 @@ header nav ul a {
 .footerWithHr {
   display: grid;
   grid-template-rows: 0.1fr 1fr 1fr 1fr;
-  background-color: #f6f9fc;
+  background-color: #1a1b2f;
   padding: 40px 30px;
   align-items: center;
 }
@@ -281,7 +292,7 @@ header nav ul a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-color: v #425466;
+  border-color: #425466;
   border: 0.5px solid;
   width: 40vh;
 }
@@ -754,6 +765,13 @@ header nav ul a {
   margin-bottom: 10px;
 }
 
+.pilar-1, .pilar-2, .pilar-3 {
+  transition: all 0.7s;
+}
+.pilar-1:hover, .pilar-2:hover, .pilar-3:hover {
+  transform: scale(105%);
+}
+
 /* ----- Fin pilares : mobile ----- */
 /* ----- Inicio pilares : tablet peq ----- */
 @media screen and (min-width: 600px) {
@@ -822,7 +840,7 @@ header nav ul a {
   color: #1a1b2f;
 }
 
-.imgBannersSec, .imgBannersSec__Career, .imgBannersSec__Serv, .imgBannersSec__Noso {
+.imgBannersSec_thank, .imgBannersSec, .imgBannersSec__Career, .imgBannersSec__Serv, .imgBannersSec__Noso {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1573,6 +1591,7 @@ header nav ul a {
   align-content: center;
   align-items: center;
   justify-items: center;
+  padding-bottom: 70px;
 }
 
 .vacantesContenedor__interno {
@@ -1612,6 +1631,7 @@ header nav ul a {
   .vacantesContenedores {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    padding-bottom: 70px;
   }
 }
 /* ------------------------------ Fin de CSS Carrera Tablet Gra ------------------------------ */
@@ -1641,6 +1661,7 @@ header nav ul a {
     grid-template-rows: 1fr;
     padding: 0px 100px;
     grid-column-gap: 15;
+    padding-bottom: 70px;
   }
   .vacantesContenedor__interno {
     width: 250px;
@@ -1715,7 +1736,7 @@ header nav ul a {
     background-position: left;
     z-index: -1;
   }
-  .gtc {
+  .gt {
     background-color: #fff;
   }
 }
@@ -1742,4 +1763,23 @@ header nav ul a {
     padding: 0px 200px;
   }
   /* ----- Fin info contacto : desktop -----*/
+}
+.imgBannersSec_thank {
+  background-image: url("../assets/6_thankyou/bannersecmob-thankyou.jpg");
+}
+
+@media screen and (min-width: 800px) {
+  .bannerSecPages {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 300px;
+    justify-content: left;
+    padding-bottom: 0px;
+  }
+  .imgBannersSec_thank {
+    background-image: url("../assets/6_thankyou/bannersec-thankyou.jpg");
+    background-size: cover;
+    background-position: left;
+    z-index: -1;
+  }
 }/*# sourceMappingURL=main.css.map */
